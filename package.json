@@ -3,20 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "packageManager": "npm@10.9.9",
-  "description": "Streaming pessoal P2P com metadados TMDB (frontend + bridge + varredor)",
-  "workspaces": [
-    "frontend",
-    "bridge"
-  ],
+  "description": "Streaming pessoal P2P com metadados TMDB",
   "scripts": {
-    "dev": "npm run dev --workspace frontend",
-    "build": "npm run build --workspace frontend",
-    "bridge": "npm start --workspace bridge",
-    "test": "node --test \"frontend/src/utils/*.test.js\""
-  },
-  "optionalDependencies": {
-    "@rolldown/binding-linux-x64-gnu": "*",
-    "@rolldown/binding-wasm32-wasi": "*"
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "bridge": "cd bridge && npm start"
   },
   "engines": {
     "node": ">=20"
