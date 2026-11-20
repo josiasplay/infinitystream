@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #a855f7;
+  --color-accent-strong: #9333ea;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+html { color-scheme: dark; }
+body { min-height: 100dvh; }
+
+/* Rolagem horizontal das fileiras sem barra visível */
+.row-scroll { scrollbar-width: none; scroll-snap-type: x proximity; }
+.row-scroll::-webkit-scrollbar { display: none; }
+.row-scroll > * { scroll-snap-align: start; }
+
+/* Barra de progresso/seek do player */
+input[type="range"].seek { accent-color: var(--color-accent); }
+
+video::cue { background: rgb(0 0 0 / 0.7); font-size: 1.1em; }

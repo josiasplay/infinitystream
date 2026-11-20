@@ -1,0 +1,43 @@
+name: Revalidar links
+
+on:
+  schedule:
+    - cron: '30 3,15 * * *' # a cada 12 horas, defasado do catalog.yml
+  workflow_dispatch:
+
+concurrency:
+  group: catalog # mesmo grupo: nunca roda junto com o varredor
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: scraper/requirements.txt
+
+      - run: pip install -r scraper/requirements.txt
+
+      - name: Revalidar (UDP scrape + HEAD nos .torrent)
+        env:
+          DEAD_LINK_DAYS: ${{ vars.DEAD_LINK_DAYS || '7' }}
+        run: python scraper/validate_links.py
+
+      - name: Commit do catálogo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/catalog.json
+          git diff --cached --quiet && exit 0
+          git commit -m "chore(catalog): revalidação de links"
+          git pull --rebase --autostash
+          git push

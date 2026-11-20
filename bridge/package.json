@@ -1,0 +1,22 @@
+{
+  "name": "infinitystream-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Ponte WebRTC <-> BitTorrent (TCP/UDP) para o InfinityStream",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --max-old-space-size=800 server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bittorrent-tracker": "11.2.3",
+    "cors": "2.8.6",
+    "dotenv": "17.2.3",
+    "express": "5.3.0",
+    "express-rate-limit": "8.7.5",
+    "webtorrent": "3.0.21"
+  }
+}
