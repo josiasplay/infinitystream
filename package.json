@@ -2,8 +2,7 @@
   "name": "infinitystream",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "npm@10.9.9",
-  "description": "Streaming pessoal P2P com metadados TMDB",
+  "description": "Streaming pss",
   "scripts": {
     "dev": "cd frontend && npm run dev",
     "build": "cd frontend && npm run build",
