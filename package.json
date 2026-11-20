@@ -2,6 +2,7 @@
   "name": "infinitystream",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "npm@10.9.9",
   "description": "Streaming pessoal P2P com metadados TMDB (frontend + bridge + varredor)",
   "workspaces": [
     "frontend",
