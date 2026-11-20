@@ -13,6 +13,10 @@
     "bridge": "npm start --workspace bridge",
     "test": "node --test \"frontend/src/utils/*.test.js\""
   },
+  "optionalDependencies": {
+    "@rolldown/binding-linux-x64-gnu": "*",
+    "@rolldown/binding-wasm32-wasi": "*"
+  },
   "engines": {
     "node": ">=20"
   }
