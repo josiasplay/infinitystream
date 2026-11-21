@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-21T00:17:30Z",
- "total_titles": 246,
+ "generated_at": "2026-11-21T05:34:09Z",
+ "total_titles": 329,
  "titles": {
   "45745": {
    "tmdb_id": 45745,
@@ -15,16 +15,16 @@
      "language": "en",
      "source": "WEB-DL",
      "codec": "x264",
-     "seeders": 272,
+     "seeders": 246,
      "size_gb": 0.13,
      "magnet": "magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F",
      "torrent_url": "https://webtorrent.io/torrents/sintel.torrent",
      "title": "Sintel.2010.1080p.WEB-DL.x264.[Blender.Open.Movie]",
      "license": "CC BY 3.0 — Blender Foundation",
      "origin": "manual",
-     "score": 79.6,
+     "score": 80.6,
      "added_at": "2026-11-20T00:00:00Z",
-     "last_seen_seeders": 272,
+     "last_seen_seeders": 246,
      "dual_audio": false
     }
    ],
@@ -49,7 +49,7 @@
      "language": "en",
      "source": "WEB-DL",
      "codec": "x264",
-     "seeders": 418,
+     "seeders": 446,
      "size_gb": 0.26,
      "magnet": "magnet:?xt=urn:btih:dd8255ecdc7ca55fb0bbf81323d87062db1f6d1c&dn=Big+Buck+Bunny&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F",
      "torrent_url": "https://webtorrent.io/torrents/big-buck-bunny.torrent",
@@ -58,7 +58,7 @@
      "origin": "manual",
      "score": 83.7,
      "added_at": "2026-11-20T00:00:00Z",
-     "last_seen_seeders": 418,
+     "last_seen_seeders": 446,
      "dual_audio": false
     }
    ],
@@ -83,16 +83,16 @@
      "language": "en",
      "source": "WEB-DL",
      "codec": "x264",
-     "seeders": 78,
+     "seeders": 69,
      "size_gb": 0.57,
      "magnet": "magnet:?xt=urn:btih:209c8226b299b308beaf2b9cd3fb49212dbd13ec&dn=Tears+of+Steel&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F",
      "torrent_url": "https://webtorrent.io/torrents/tears-of-steel.torrent",
      "title": "Tears.of.Steel.2012.1080p.WEB-DL.x264.[Blender.Open.Movie]",
      "license": "CC BY 3.0 — Blender Foundation",
      "origin": "manual",
-     "score": 72.1,
+     "score": 71.6,
      "added_at": "2026-11-20T00:00:00Z",
-     "last_seen_seeders": 78,
+     "last_seen_seeders": 69,
      "dual_audio": false
     }
    ],
@@ -8173,9 +8173,2743 @@
    ],
    "original_language": "en",
    "is_anime": false
+  },
+  "43796": {
+   "tmdb_id": 43796,
+   "type": "movie",
+   "title_pt_br": "Spooks Run Wild",
+   "releases": [
+    {
+     "title": "Spooks Run Wild.1941.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/spooks_run_wild/spooks_run_wild_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:526cf5580a963d8b83548f9f543ab3718a730b27&dn=spooks_run_wild&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.61,
+     "license": "Domínio público (archive.org)",
+     "origin": "internet_archive",
+     "archive_id": "spooks_run_wild",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/kYBjhhKuAUXJ5WTZE3MVAQrGwjP.jpg",
+   "backdrop_path": "/67aG8MDHaQYHiWWJ3aq9mjZaiSI.jpg",
+   "year": 1941,
+   "genre_ids": [
+    35,
+    27
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "1039192": {
+   "tmdb_id": 1039192,
+   "type": "movie",
+   "title_pt_br": "3 Inches Of Blood: Warriors Of The Great White North",
+   "releases": [
+    {
+     "title": "The White Warrior.1961.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/TheWhiteWarrior1961/TheWhiteWarrior1961_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:08bd6d93d8b531e83d415c604a4aef215175d10c&dn=TheWhiteWarrior1961&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 2.16,
+     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+     "origin": "internet_archive",
+     "archive_id": "TheWhiteWarrior1961",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/uPJsdIEKxlj2zi1CEVTdEYwnUQf.jpg",
+   "backdrop_path": null,
+   "year": 2014,
+   "genre_ids": [
+    99,
+    10402
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "228696": {
+   "tmdb_id": 228696,
+   "type": "movie",
+   "title_pt_br": "Episodes in the Life of a Gin Bottle",
+   "releases": [
+    {
+     "title": "Episodes in the Life of a Gin Bottle.1925.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/silent-episodes-in-the-life-of-a-gin-bottle/silent-episodes-in-the-life-of-a-gin-bottle_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:5f670edcaa9ca57bf2c349abe4e7b77fc51dafb4&dn=silent-episodes-in-the-life-of-a-gin-bottle&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 0.35,
+     "license": "Domínio público (archive.org)",
+     "origin": "internet_archive",
+     "archive_id": "silent-episodes-in-the-life-of-a-gin-bottle",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/24gCcGN0w1MHGwXcX5wlOr3xjTL.jpg",
+   "backdrop_path": "/ecaVw0FXrKzwIjl2tGN0pAohwmM.jpg",
+   "year": 1925,
+   "genre_ids": [
+    14,
+    18
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "22965": {
+   "tmdb_id": 22965,
+   "type": "movie",
+   "title_pt_br": "Condenado à Morte",
+   "releases": [
+    {
+     "title": "Doomed to Die.1940.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/Doomed_to_Die_1940/Doomed_to_Die_1940_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:9a9cc4d252fd0355c76014ed7710d45daf5b3d9b&dn=Doomed_to_Die_1940&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.42,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "Doomed_to_Die_1940",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/fZM1TXUismtG2D5OouYhncceTYL.jpg",
+   "backdrop_path": "/c9k3Am0QhRhTGJQsDVfcbxeF0lJ.jpg",
+   "year": 1940,
+   "genre_ids": [
+    9648,
+    80,
+    53
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "63180": {
+   "tmdb_id": 63180,
+   "type": "movie",
+   "title_pt_br": "Marihuana",
+   "releases": [
+    {
+     "title": "Marihuana.1936.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/Marihuana-the_Devils_Weed/Marihuana-the_Devils_Weed_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:c43cb6bc7534dfb4a53682508d60731240eebd36&dn=Marihuana-the_Devils_Weed&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.28,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "Marihuana-the_Devils_Weed",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/nFcCIZeRxGPzatObMegvqpFjMOx.jpg",
+   "backdrop_path": "/i9PNA6A71vmaH7Y9bepgwUoBuh3.jpg",
+   "year": 1936,
+   "genre_ids": [
+    80,
+    18
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "337925": {
+   "tmdb_id": 337925,
+   "type": "movie",
+   "title_pt_br": "Lady in the Iron Mask",
+   "releases": [
+    {
+     "title": "Iron Mask.1952.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/iron_mask_ipod/iron_mask_ipod_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:e0f0dd80b225f54e977c4308ae36fbc999c07c55&dn=iron_mask_ipod&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.46,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "iron_mask_ipod",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/rY80v4XWCP5OE8GPWk3Ji0WApC1.jpg",
+   "backdrop_path": "/qxwCYII35QgMzVV5829yKTLKfvb.jpg",
+   "year": 1952,
+   "genre_ids": [
+    12
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "37214": {
+   "tmdb_id": 37214,
+   "type": "movie",
+   "title_pt_br": "Todos São Valentes",
+   "releases": [
+    {
+     "title": "Go for Broke!.1951.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/Go_for_Broke/Go_for_Broke_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:f6d8adedd664147e444b3d0e8c8fcc0da53ea7a2&dn=Go_for_Broke&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 2.08,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "Go_for_Broke",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/2XnwfYhgAnZzDPkA7ixdiSai81p.jpg",
+   "backdrop_path": "/z3YncSFgNTUfFm6cDOzHaS6wPMv.jpg",
+   "year": 1951,
+   "genre_ids": [
+    18,
+    10752,
+    36
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "122221": {
+   "tmdb_id": 122221,
+   "type": "movie",
+   "title_pt_br": "The Limping Man",
+   "releases": [
+    {
+     "title": "The Limping Man.1953.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/TheLimpingMan/TheLimpingMan_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:e903a39d45fc5e6eb1e6e5bf7257725c85a4c1c4&dn=TheLimpingMan&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.85,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "TheLimpingMan",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/swtHnAu4ILtJOCna3Sd9nGH2GTu.jpg",
+   "backdrop_path": "/13xzqkBL02J4lLZrOMzsBMke8Rf.jpg",
+   "year": 1953,
+   "genre_ids": [
+    53
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "805": {
+   "tmdb_id": 805,
+   "type": "movie",
+   "title_pt_br": "O Bebê de Rosemary",
+   "releases": [
+    {
+     "title": "Rosemary's Baby.1968.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/rosemarys-baby_202105/rosemarys-baby_202105_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:eefe0e3777e54b321e7212ccd6720d572c68e6d9&dn=rosemarys-baby_202105&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 11.28,
+     "license": "Domínio público (archive.org)",
+     "origin": "internet_archive",
+     "archive_id": "rosemarys-baby_202105",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/uYgvlHceRFjAFbsNeMInYcLZLUb.jpg",
+   "backdrop_path": "/qszuXKhzYR24oRpsmh7eZaPbvL8.jpg",
+   "year": 1968,
+   "genre_ids": [
+    18,
+    27,
+    53
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "146721": {
+   "tmdb_id": 146721,
+   "type": "movie",
+   "title_pt_br": "Carne",
+   "releases": [
+    {
+     "title": "Carne.1968.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/carne-1968/carne-1968_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:3af82a9f9d04865927a37b48698e279dc7a2bedb&dn=carne-1968&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "es",
+     "quality": "480p",
+     "size_gb": 1.09,
+     "license": "Domínio público (archive.org)",
+     "origin": "internet_archive",
+     "archive_id": "carne-1968",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/75JBeB88mj1BWDzzTSd7Y93fRDl.jpg",
+   "backdrop_path": "/ljlZxcZ6aZk0LKPfBmN46I25JJN.jpg",
+   "year": 1968,
+   "genre_ids": [
+    18
+   ],
+   "original_language": "es",
+   "is_anime": false
+  },
+  "43392": {
+   "tmdb_id": 43392,
+   "type": "movie",
+   "title_pt_br": "The Jackie Robinson Story",
+   "releases": [
+    {
+     "title": "Jackie Robinson Story, The.1950.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/Jackie_Robinson_Story_The/Jackie_Robinson_Story_The_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:b5e21e0e0a83ee34d21e19d358bbde987ed28680&dn=Jackie_Robinson_Story_The&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 6.53,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "Jackie_Robinson_Story_The",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/cx13WcbLX3dU7Lo6ZcVwygQpdtO.jpg",
+   "backdrop_path": "/lsYyd0hx4DZrHAANKmyH6ZTRK2X.jpg",
+   "year": 1950,
+   "genre_ids": [
+    18,
+    10751
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "935": {
+   "tmdb_id": 935,
+   "type": "movie",
+   "title_pt_br": "Dr. Fantástico",
+   "releases": [
+    {
+     "title": "Dr Strangelove, or: How I Learned to Stop Worrying and Love the Bomb.1964.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb/dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:94aa4fd06b27bfc66b8d2271569c02a1e3f1fd2d&dn=dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 7.79,
+     "license": "Domínio público (archive.org)",
+     "origin": "internet_archive",
+     "archive_id": "dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/lFcwVewzDwmJjIIjNIWwST4ctaC.jpg",
+   "backdrop_path": "/7i0L2ee4Iy0aXV6vR5u1ZmblOrx.jpg",
+   "year": 1964,
+   "genre_ids": [
+    35,
+    10752
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "184458": {
+   "tmdb_id": 184458,
+   "type": "movie",
+   "title_pt_br": "Cockeyed: Gems from the Memory of a Nutty Cameraman",
+   "releases": [
+    {
+     "title": "Cockeyed: Gems from the Memory of a Nutty Cameraman.1925.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/silent-cockeyed-gems-from-the-memory-of-a-nutty-cameraman/silent-cockeyed-gems-from-the-memory-of-a-nutty-cameraman_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:63ac7b969c47dccb08a50a815bf8e085e6ff2a73&dn=silent-cockeyed-gems-from-the-memory-of-a-nutty-cameraman&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 0.09,
+     "license": "Domínio público (archive.org)",
+     "origin": "internet_archive",
+     "archive_id": "silent-cockeyed-gems-from-the-memory-of-a-nutty-cameraman",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/zIjOvvgWsOYrfo6UXLtPf2NBnPZ.jpg",
+   "backdrop_path": null,
+   "year": 1925,
+   "genre_ids": [],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "364645": {
+   "tmdb_id": 364645,
+   "type": "movie",
+   "title_pt_br": "Here Is Germany",
+   "releases": [
+    {
+     "title": "Here is Germany.1945.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/HERE_IS_GERMANY/HERE_IS_GERMANY_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:bb1468d372041a314cbcc82cf708fab15377e93f&dn=HERE_IS_GERMANY&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 2.47,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "HERE_IS_GERMANY",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/cNNMedccw2wnx18nUIiyVxaceD.jpg",
+   "backdrop_path": "/wWKqGgDrORBgClCoRahqlxQgJ5s.jpg",
+   "year": 1945,
+   "genre_ids": [
+    10752,
+    99
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "368376": {
+   "tmdb_id": 368376,
+   "type": "movie",
+   "title_pt_br": "Brand of the Devil",
+   "releases": [
+    {
+     "title": "Brand of the Devil.1944.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/brand_of_the_devil/brand_of_the_devil_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:a16459665eeff32766434b0cc8413d8c9c0dcb81&dn=brand_of_the_devil&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 3.52,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "brand_of_the_devil",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/leCiTYhB88W3pgrCTuCUda8DXka.jpg",
+   "backdrop_path": "/6v3spVrCC6vk9rzd0Iyx6FMH4WM.jpg",
+   "year": 1944,
+   "genre_ids": [
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "126807": {
+   "tmdb_id": 126807,
+   "type": "movie",
+   "title_pt_br": "Hitler- Dead or Alive",
+   "releases": [
+    {
+     "title": "Hitler Dead or Alive.1942.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/hitler_dead_or_alive/hitler_dead_or_alive_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:1d48c3e00ae0a70a9fb0ede0a72cb8d2a704f1dd&dn=hitler_dead_or_alive&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.75,
+     "license": "Domínio público (archive.org)",
+     "origin": "internet_archive",
+     "archive_id": "hitler_dead_or_alive",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/uuspCJZ2gM43bwN414npOOi5269.jpg",
+   "backdrop_path": "/kdPyBqoSu0e53aPGAhsAXPphuxy.jpg",
+   "year": 1942,
+   "genre_ids": [
+    53,
+    12,
+    35
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "1563411": {
+   "tmdb_id": 1563411,
+   "type": "movie",
+   "title_pt_br": "The Red Detachment of Women",
+   "releases": [
+    {
+     "title": "The Red Detachment of Women.1970.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/The_Red_Detachment_of_Women/The_Red_Detachment_of_Women_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:64018ebc8cdc17fec9953d68fd857d40deba57e0&dn=The_Red_Detachment_of_Women&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 2.63,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "The_Red_Detachment_of_Women",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/v21vrug17xzcLqIqWJaFkMElwSM.jpg",
+   "backdrop_path": null,
+   "year": 2016,
+   "genre_ids": [],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "117123": {
+   "tmdb_id": 117123,
+   "type": "movie",
+   "title_pt_br": "Dick Tracy em Luta",
+   "releases": [
+    {
+     "title": "Dick Tracy's Dilemma.1947.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/dick_tracys_dilemma/dick_tracys_dilemma_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:fe9b35df8777721bb1e46b37581b83975db996f7&dn=dick_tracys_dilemma&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.02,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "dick_tracys_dilemma",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/8fuS89ds46W5Nk7ZInoPh8QqWFG.jpg",
+   "backdrop_path": "/afDfU55Z6RZM0JEea0YUHaq94dm.jpg",
+   "year": 1947,
+   "genre_ids": [
+    18,
+    80
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "23298": {
+   "tmdb_id": 23298,
+   "type": "movie",
+   "title_pt_br": "Phantom of Chinatown",
+   "releases": [
+    {
+     "title": "Phantom of Chinatown.1940.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/Phantom_of_Chinatown_1940/Phantom_of_Chinatown_1940_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:673d24d400489f3dc1f6b757ff93f0ac114e63c2&dn=Phantom_of_Chinatown_1940&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.29,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "Phantom_of_Chinatown_1940",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/8ciPiNGAXdaGjc3FKALWKEwYJny.jpg",
+   "backdrop_path": "/j09EmZcDjTWKaQ0obtQSHE6MymU.jpg",
+   "year": 1940,
+   "genre_ids": [
+    80,
+    9648,
+    53
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "360210": {
+   "tmdb_id": 360210,
+   "type": "movie",
+   "title_pt_br": "Sensation Hunters",
+   "releases": [
+    {
+     "title": "Club Paradise.1945.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/club_paradise/club_paradise_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:b34bc527f85427fc8edb2dfe0b45d0d173dc33ab&dn=club_paradise&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 3.17,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "club_paradise",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/olPuiZLQk4n6O1RtEw9JVQdvHzw.jpg",
+   "backdrop_path": "/jjFqq4I6pfJqB0akhHWwtTQi03D.jpg",
+   "year": 1945,
+   "genre_ids": [
+    18
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "205215": {
+   "tmdb_id": 205215,
+   "type": "movie",
+   "title_pt_br": "The Arizona Raiders",
+   "releases": [
+    {
+     "title": "The Arizona Raiders.1936.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/TheArizonaRaiders/TheArizonaRaiders_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:1b128c63600d59d2c6676a70895f5a3a8d3d8cf7&dn=TheArizonaRaiders&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.33,
+     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+     "origin": "internet_archive",
+     "archive_id": "TheArizonaRaiders",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/pA9lYE8r70MQtCuaZVQJegO3Ei3.jpg",
+   "backdrop_path": "/1ZMUdYiHaYnJFLpJ7WoCpeKqVqV.jpg",
+   "year": 1936,
+   "genre_ids": [
+    37,
+    35,
+    18
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "117553": {
+   "tmdb_id": 117553,
+   "type": "movie",
+   "title_pt_br": "A Garota do Calendário",
+   "releases": [
+    {
+     "title": "Calendar Girl.1948.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/calendar_girl/calendar_girl_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:976e578fae54629976efa73bcd516a44e2282851&dn=calendar_girl&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 5.41,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "calendar_girl",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/lzt5b3SA7e12IzlPUT0V1LOVXAi.jpg",
+   "backdrop_path": "/55sNqPoGPyVCkNNA2W8KquRL9uD.jpg",
+   "year": 1993,
+   "genre_ids": [
+    35,
+    18
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "241444": {
+   "tmdb_id": 241444,
+   "type": "movie",
+   "title_pt_br": "Bar-Z Bad Men",
+   "releases": [
+    {
+     "title": "Bar-Z Bad Men.1937.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/Bar-ZBadMen/Bar-ZBadMen_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:c632e838fd6818cc5c09d49e072a7a610e3f6fee&dn=Bar-ZBadMen&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.51,
+     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+     "origin": "internet_archive",
+     "archive_id": "Bar-ZBadMen",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/5rZcjD81blLPJlCWwn0FdC7xGxP.jpg",
+   "backdrop_path": "/eiG6aqsoLTaP2m2SksCy5fUW3J7.jpg",
+   "year": 1937,
+   "genre_ids": [
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "53274": {
+   "tmdb_id": 53274,
+   "type": "movie",
+   "title_pt_br": "Young Bill Hickok",
+   "releases": [
+    {
+     "title": "Young Bill Hickok.1940.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/young_bill_hickok/young_bill_hickok_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:36d7f721819d3d6725881d6419811e1199fb360f&dn=young_bill_hickok&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 2.3,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "young_bill_hickok",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/fZfkcnkieqS5763lt04ovddYWiw.jpg",
+   "backdrop_path": "/7rbVNTfN2K5BMJ6I69KW0u34Uak.jpg",
+   "year": 1940,
+   "genre_ids": [
+    28,
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "53385": {
+   "tmdb_id": 53385,
+   "type": "movie",
+   "title_pt_br": "Dois Heróis",
+   "releases": [
+    {
+     "title": "Charlie Chaplin's \"The Knockout\".1914.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/CC_1914_06_11_TheKnockout/CC_1914_06_11_TheKnockout_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:02d383943b365a3a6f4ace909a8743a37a673262&dn=CC_1914_06_11_TheKnockout&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 0.45,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "CC_1914_06_11_TheKnockout",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/8qmp5csuIU3w3hpTgr4N9SwDWqu.jpg",
+   "backdrop_path": "/nwVN8WAKaEuwQ6nfRj6PLjs76O2.jpg",
+   "year": 1914,
+   "genre_ids": [
+    35
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "53828": {
+   "tmdb_id": 53828,
+   "type": "movie",
+   "title_pt_br": "Coração de Aço",
+   "releases": [
+    {
+     "title": "Blue Steel.1934.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/BlueSteel/BlueSteel_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:cb66284ba1dd18f30ad6d9dc0279e7d98c564c6a&dn=BlueSteel&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.54,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "BlueSteel",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/xWVlwZhrqJ4QaSYDJNZxEnZgfDm.jpg",
+   "backdrop_path": "/czVoG6F48raC12spvSuCn8Qavb3.jpg",
+   "year": 1934,
+   "genre_ids": [
+    37,
+    28
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "133554": {
+   "tmdb_id": 133554,
+   "type": "movie",
+   "title_pt_br": "Gangsters of the Frontier",
+   "releases": [
+    {
+     "title": "Gangsters of the Frontier.1944.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/gangsters_of_the_frontier_1944/gangsters_of_the_frontier_1944_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:8f9b98169346776a4a8f5f352307fada6b164a3e&dn=gangsters_of_the_frontier_1944&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.12,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "gangsters_of_the_frontier_1944",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/xQIHACzMC1lgFlI09mb3ZHwf5Lm.jpg",
+   "backdrop_path": "/3rLzdGUop0nBSmZPunoRfNpcF2e.jpg",
+   "year": 1944,
+   "genre_ids": [
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "18447": {
+   "tmdb_id": 18447,
+   "type": "movie",
+   "title_pt_br": "Ódio Destruidor",
+   "releases": [
+    {
+     "title": "The Young Land.1959.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/YoungLand/YoungLand_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:0414166c823979b916fcd31e25a1c463f0b6b26e&dn=YoungLand&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.63,
+     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+     "origin": "internet_archive",
+     "archive_id": "YoungLand",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/81GomzdaVYNLc0cL2dlfnCvuRdn.jpg",
+   "backdrop_path": "/lTh0sAMvT73OWXMylK5rC1Cl3cb.jpg",
+   "year": 1959,
+   "genre_ids": [
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "46567": {
+   "tmdb_id": 46567,
+   "type": "movie",
+   "title_pt_br": "Assim é que se Faz... Amigo",
+   "releases": [
+    {
+     "title": "It Can Be Done Amigo.1972.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/ItCanBeDoneAmigo/ItCanBeDoneAmigo_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:afe7bf103d0520913fa0c9e44c93ba5ec1ae64e4&dn=ItCanBeDoneAmigo&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "it",
+     "quality": "480p",
+     "size_gb": 2.27,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "ItCanBeDoneAmigo",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/XIqw51L3UOmVafN6XBVVcCWCRM.jpg",
+   "backdrop_path": "/fxzTrO9Eq6uUvltMvNIHCd5kutK.jpg",
+   "year": 1972,
+   "genre_ids": [
+    35,
+    37
+   ],
+   "original_language": "it",
+   "is_anime": false
+  },
+  "44444": {
+   "tmdb_id": 44444,
+   "type": "movie",
+   "title_pt_br": "Lycanthropus",
+   "releases": [
+    {
+     "title": "Werewolf in a Girls' Dormitory.1962.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/Werewolf_In_A_Girls_Dormitory/Werewolf_In_A_Girls_Dormitory_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:1cbf1cea4e2c97567ffb5bc96f1bd054fe400808&dn=Werewolf_In_A_Girls_Dormitory&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "it",
+     "quality": "480p",
+     "size_gb": 3.57,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "Werewolf_In_A_Girls_Dormitory",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/bGCqG6fTfqUt3FpUYSRiKzXkTmg.jpg",
+   "backdrop_path": "/n9Pl2VNrHsXMkQ9EYaZNNqBjRwz.jpg",
+   "year": 1961,
+   "genre_ids": [
+    27,
+    9648
+   ],
+   "original_language": "it",
+   "is_anime": false
+  },
+  "25768": {
+   "tmdb_id": 25768,
+   "type": "movie",
+   "title_pt_br": "Marinheiro de Encomenda",
+   "releases": [
+    {
+     "title": "Steamboat Bill Jr..1928.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/steamboat_bill_ipod/steamboat_bill_ipod_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:35b068489afedcb6953cf4ceb0b0bcf7d8f0e219&dn=steamboat_bill_ipod&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.58,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "steamboat_bill_ipod",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/xCczIjba3B7WDRnpydODJ3B0eQK.jpg",
+   "backdrop_path": "/kmZjw9hbo8ErovofQvPB21HRyRf.jpg",
+   "year": 1928,
+   "genre_ids": [
+    35,
+    10749
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "182303": {
+   "tmdb_id": 182303,
+   "type": "movie",
+   "title_pt_br": "The Bashful Bachelor",
+   "releases": [
+    {
+     "title": "The Bashful Bachelor.1942.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/the_bashful_bachelor/the_bashful_bachelor_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:02c8c834894f8994aea702f808dd5e0c19689541&dn=the_bashful_bachelor&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 5.5,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "the_bashful_bachelor",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/l1n416N1HXA1H75SGWqPhzgfrFS.jpg",
+   "backdrop_path": "/gw1tU0Hzhp6eVmBSueNAYF8LbgK.jpg",
+   "year": 1942,
+   "genre_ids": [
+    35
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "268986": {
+   "tmdb_id": 268986,
+   "type": "movie",
+   "title_pt_br": "Billy the Kid Wanted",
+   "releases": [
+    {
+     "title": "Billy the Kid Wanted.1941.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/Billy_the_Kid_Wanted_1941/Billy_the_Kid_Wanted_1941_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:eebc9ee97989c738f18bc01d1f161c27c017263f&dn=Billy_the_Kid_Wanted_1941&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 0.99,
+     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+     "origin": "internet_archive",
+     "archive_id": "Billy_the_Kid_Wanted_1941",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/bNYVVW99fAIjOMgV1PFf8dYLvpX.jpg",
+   "backdrop_path": "/qoTGPcEachlhEomwxnfw5kZyrH4.jpg",
+   "year": 1941,
+   "genre_ids": [
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "149461": {
+   "tmdb_id": 149461,
+   "type": "movie",
+   "title_pt_br": "Under the Red Robe",
+   "releases": [
+    {
+     "title": "Under The Red Robe.1937.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/UndertheRedRobeVSjostrom1937RMassey/UndertheRedRobeVSjostrom1937RMassey_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:839b3c2287142dbe53a02c1bda07c776cbcc0c56&dn=UndertheRedRobeVSjostrom1937RMassey&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.82,
+     "license": "Domínio público (archive.org)",
+     "origin": "internet_archive",
+     "archive_id": "UndertheRedRobeVSjostrom1937RMassey",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/5LKLxmSCj8SI0bkBp3tAm3RnguU.jpg",
+   "backdrop_path": "/v7utjDWXJwLB9DTw9vOpMoTUbzW.jpg",
+   "year": 1937,
+   "genre_ids": [
+    12,
+    10749
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "146625": {
+   "tmdb_id": 146625,
+   "type": "movie",
+   "title_pt_br": "Streets of New York",
+   "releases": [
+    {
+     "title": "Abe Lincoln of the Ninth Avenue.1939.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/abe_lincoln_of_the_4th_ave/abe_lincoln_of_the_4th_ave_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:0529be02765eec638151d5df7c6cc975cc56f78d&dn=abe_lincoln_of_the_4th_ave&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 5.22,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "abe_lincoln_of_the_4th_ave",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/4GtQfKtZ4Jqb1XseCieDTjVNkBt.jpg",
+   "backdrop_path": "/bmx1hjmyIjZV5GFl9WhTnXZX89S.jpg",
+   "year": 1939,
+   "genre_ids": [
+    80,
+    18
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "156399": {
+   "tmdb_id": 156399,
+   "type": "movie",
+   "title_pt_br": "Chinatown After Dark",
+   "releases": [
+    {
+     "title": "Chinatown After Dark.1931.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/chinatown_after_dark/chinatown_after_dark_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:c9b345bc216300f1b25b50ca7c36fb203d549ab1&dn=chinatown_after_dark&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 2.87,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "chinatown_after_dark",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/yNUhljEoL4UOgTOFJKpkFK6EYFB.jpg",
+   "backdrop_path": "/6W7Suemc1Iquc15k0IS5dFU93vj.jpg",
+   "year": 1931,
+   "genre_ids": [
+    18,
+    80
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "168408": {
+   "tmdb_id": 168408,
+   "type": "movie",
+   "title_pt_br": "Esther e o Rei",
+   "releases": [
+    {
+     "title": "Esther and the King.1960.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/PublicdomainGalateaFilmandTitanusEstherandtheKing/PublicdomainGalateaFilmandTitanusEstherandtheKing_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:a327526ba0e23e43c69f9d884c074eb131715771&dn=PublicdomainGalateaFilmandTitanusEstherandtheKing&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 0.98,
+     "license": "http://creativecommons.org/licenses/by/3.0/",
+     "origin": "internet_archive",
+     "archive_id": "PublicdomainGalateaFilmandTitanusEstherandtheKing",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/mJyMUdGsy6wvqPgJftzqBg4ecAx.jpg",
+   "backdrop_path": "/w33ZFrOIWkaNAMj1skFAfzDOPM2.jpg",
+   "year": 1960,
+   "genre_ids": [
+    18
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "359034": {
+   "tmdb_id": 359034,
+   "type": "movie",
+   "title_pt_br": "Outlaws of Boulder Pass",
+   "releases": [
+    {
+     "title": "Outlaws of Boulder Pass.1942.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/outlaws_of_boulder_pass/outlaws_of_boulder_pass_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:6b8b98d8a1032dd48410f767b66bba2e5ddb7f79&dn=outlaws_of_boulder_pass&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 5.12,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "outlaws_of_boulder_pass",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/6CgBHNXmR7W7WNYhNW3fvi893T2.jpg",
+   "backdrop_path": "/6v7LK7891cAmZpfvLObIwCbSdGP.jpg",
+   "year": 1942,
+   "genre_ids": [
+    10402,
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "41302": {
+   "tmdb_id": 41302,
+   "type": "movie",
+   "title_pt_br": "Zontar: The Thing from Venus",
+   "releases": [
+    {
+     "title": "Zontar the Thing From Venus.1966.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/zontar_the_thing_from_venus/zontar_the_thing_from_venus_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:2f58de55d4f1bb0042960ab23cc2e320a0b16f45&dn=zontar_the_thing_from_venus&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.58,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "zontar_the_thing_from_venus",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/2YY7c3dws5XU7FX4G41kcnJRlaQ.jpg",
+   "backdrop_path": "/9OOFIRotd2s7L7hUhOI1q2gTlu3.jpg",
+   "year": 1967,
+   "genre_ids": [
+    27,
+    878,
+    10770
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "84270": {
+   "tmdb_id": 84270,
+   "type": "movie",
+   "title_pt_br": "A Christmas Carol",
+   "releases": [
+    {
+     "title": "A Christmas Carol.1910.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/AChristmasCarol/AChristmasCarol_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:c4ac9816222105fe6c8092a3c58808fac00b254d&dn=AChristmasCarol&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 0.3,
+     "license": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+     "origin": "internet_archive",
+     "archive_id": "AChristmasCarol",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/hXxoI4wXKaPSUmFL1rVBTdfiC2G.jpg",
+   "backdrop_path": "/aGdmJZjoaY4Q6CShloN25CFLVVw.jpg",
+   "year": 1910,
+   "genre_ids": [
+    14,
+    18
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "46707": {
+   "tmdb_id": 46707,
+   "type": "movie",
+   "title_pt_br": "المومياء",
+   "releases": [
+    {
+     "title": "The Night of Counting the Years.1969.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/The_Night_of_Counting_the_Years/The_Night_of_Counting_the_Years_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:6d460227a447aa78f177d2af0273afa7caa6b786&dn=The_Night_of_Counting_the_Years&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "ar",
+     "quality": "480p",
+     "size_gb": 3.0,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "The_Night_of_Counting_the_Years",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/9dahsNrVPWKy8Pjuq6IFjJbGYfa.jpg",
+   "backdrop_path": "/q65a1LQKidDB8fQEAiaFZrpn6W1.jpg",
+   "year": 1969,
+   "genre_ids": [
+    18,
+    36
+   ],
+   "original_language": "ar",
+   "is_anime": false
+  },
+  "241774": {
+   "tmdb_id": 241774,
+   "type": "movie",
+   "title_pt_br": "Nevada City",
+   "releases": [
+    {
+     "title": "Nevada City.1941.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/nevada_city_ipod/nevada_city_ipod_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:16dba8a67e4ed9eee33f1699b45d748b2d358fe6&dn=nevada_city_ipod&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.22,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "nevada_city_ipod",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/zYMwY49zbhIovpCnY57YSdl4mcq.jpg",
+   "backdrop_path": "/2LDO0sseuWcNGZyZAwaccmd9Rat.jpg",
+   "year": 1941,
+   "genre_ids": [
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "38394": {
+   "tmdb_id": 38394,
+   "type": "movie",
+   "title_pt_br": "Family Enforcer",
+   "releases": [
+    {
+     "title": "Family Enforcer.1976.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/FamilyEnforcer/FamilyEnforcer_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:7c502262222a075e5a26ca6d6a41b5a39d8e2206&dn=FamilyEnforcer&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 2.13,
+     "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+     "origin": "internet_archive",
+     "archive_id": "FamilyEnforcer",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/iYmcMEtZfvLtGcZBIvTLEIHJhQt.jpg",
+   "backdrop_path": "/nWzMsfgbpgoojZHBYt2K1EMdtql.jpg",
+   "year": 1976,
+   "genre_ids": [
+    80,
+    28,
+    18
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "76080": {
+   "tmdb_id": 76080,
+   "type": "movie",
+   "title_pt_br": "Tarzan e os Caçadores",
+   "releases": [
+    {
+     "title": "Tarzan and the Trappers.1958.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/TarzanandtheTrappers/TarzanandtheTrappers_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:be0766448c37859a1d77a1062b69ddb89f286173&dn=TarzanandtheTrappers&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.74,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "TarzanandtheTrappers",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/vmNL9JuaH3ZlhusAhflVHPSvDFD.jpg",
+   "backdrop_path": "/All9f2MXskK1SLPAauxi2CNJAXj.jpg",
+   "year": 1960,
+   "genre_ids": [
+    12,
+    10770
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "37484": {
+   "tmdb_id": 37484,
+   "type": "movie",
+   "title_pt_br": "I Love Trouble",
+   "releases": [
+    {
+     "title": "I Love Trouble.1948.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/I_Love_Trouble_movie/I_Love_Trouble_movie_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:d80bb6034b7fcc810f2796e1bc15af54f1f4f8e4&dn=I_Love_Trouble_movie&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 2.28,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "I_Love_Trouble_movie",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/cDVCZx45xkd16MaWQIrswwKeJgL.jpg",
+   "backdrop_path": "/upS3MQvpxd4LRvUGOUjtlivEr1G.jpg",
+   "year": 1948,
+   "genre_ids": [
+    80,
+    18,
+    9648
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "72026": {
+   "tmdb_id": 72026,
+   "type": "movie",
+   "title_pt_br": "悦楽",
+   "releases": [
+    {
+     "title": "Pleasures Of The Flesh.1965.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/pleasures-of-the-flesh/pleasures-of-the-flesh_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:fbba6f3b2f74c6f5fc2344537088499a2feb83bd&dn=pleasures-of-the-flesh&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "ja",
+     "quality": "480p",
+     "size_gb": 7.51,
+     "license": "Domínio público (archive.org)",
+     "origin": "internet_archive",
+     "archive_id": "pleasures-of-the-flesh",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/3Qojo8qTalb26aHX4GN7aGcAnrX.jpg",
+   "backdrop_path": "/amhZdJUOM9CbYUlIWPujdf9yfU6.jpg",
+   "year": 1965,
+   "genre_ids": [
+    18,
+    35,
+    80
+   ],
+   "original_language": "ja",
+   "is_anime": false
+  },
+  "316720": {
+   "tmdb_id": 316720,
+   "type": "movie",
+   "title_pt_br": "Water Rustlers",
+   "releases": [
+    {
+     "title": "Water Rustlers.1938.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/water_rustlers/water_rustlers_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:c2c5c99726b2f7902330ef423a691f742dbab30f&dn=water_rustlers&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.44,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "water_rustlers",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/iLCwCG8A2BzDKrY0KI3HT1sfRWV.jpg",
+   "backdrop_path": null,
+   "year": 1939,
+   "genre_ids": [
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "43368": {
+   "tmdb_id": 43368,
+   "type": "movie",
+   "title_pt_br": "Floresta Maldita",
+   "releases": [
+    {
+     "title": "Big Trees, The.1952.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/big_trees/big_trees_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:a5d2b5cbc1c6c722f9f2effffa1e036b049e312e&dn=big_trees&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 3.98,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "big_trees",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/5BPeNZ1cfFMDVZDl3G63U6WatyC.jpg",
+   "backdrop_path": "/d6OTMZbbCEwtXVSQDS960pWBUgz.jpg",
+   "year": 1952,
+   "genre_ids": [
+    18,
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "18696": {
+   "tmdb_id": 18696,
+   "type": "movie",
+   "title_pt_br": "O Gigante de Maratona",
+   "releases": [
+    {
+     "title": "The Giant of Marathon.1959.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/cco_TheGiantofMarathon/cco_TheGiantofMarathon_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:5c18771f3f604b35ea80b927dc23daf5cc288470&dn=cco_TheGiantofMarathon&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "it",
+     "quality": "480p",
+     "size_gb": 2.0,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "cco_TheGiantofMarathon",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/euQCC4YONXzKpsJG5LnvSWAsc14.jpg",
+   "backdrop_path": "/3Jds2c7OWSYVLVyOWhEy095KrYD.jpg",
+   "year": 1959,
+   "genre_ids": [
+    12,
+    36,
+    10752
+   ],
+   "original_language": "it",
+   "is_anime": false
+  },
+  "38467": {
+   "tmdb_id": 38467,
+   "type": "movie",
+   "title_pt_br": "O Mistério do Rádio",
+   "releases": [
+    {
+     "title": "The Scarlet Clue.1945.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/The_Scarlet_Clue/The_Scarlet_Clue_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:e4597edde4f0462a98bd5152d69f581dce7f82f1&dn=The_Scarlet_Clue&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.44,
+     "license": "http://creativecommons.org/licenses/by/3.0/",
+     "origin": "internet_archive",
+     "archive_id": "The_Scarlet_Clue",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/vsDnujk7PDjccm2oJyDSRLXDlaI.jpg",
+   "backdrop_path": "/hoW2FVYeR1DsyGpSFDo4tMl7r7f.jpg",
+   "year": 1945,
+   "genre_ids": [
+    9648,
+    53
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "227439": {
+   "tmdb_id": 227439,
+   "type": "movie",
+   "title_pt_br": "The Silver Trail",
+   "releases": [
+    {
+     "title": "Silver Trail, The.1937.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/the_silver_trail/the_silver_trail_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:701e36e029638418d560bbb62d14e4700cf6eda1&dn=the_silver_trail&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 3.93,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "the_silver_trail",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/ipEMkbpOSOPIy1xVUaAcJB0Szk9.jpg",
+   "backdrop_path": "/akvnSwXjbE6QNdHA6yIhnrWqUHi.jpg",
+   "year": 1937,
+   "genre_ids": [
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "61855": {
+   "tmdb_id": 61855,
+   "type": "movie",
+   "title_pt_br": "Lassie: Heróis da Montanha",
+   "releases": [
+    {
+     "title": "The Painted Hills.1951.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/ThePaintedHills/ThePaintedHills_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:e0294ff75bc411198e26664c6dfb00bf64971bc3&dn=ThePaintedHills&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.77,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "ThePaintedHills",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/43Ecq31lvU5veqkka2Kup2XPxZv.jpg",
+   "backdrop_path": "/nmg9kG7WeOJEtdcHuenNDW3P2ki.jpg",
+   "year": 1951,
+   "genre_ids": [
+    28,
+    12,
+    18,
+    10751
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "35401": {
+   "tmdb_id": 35401,
+   "type": "movie",
+   "title_pt_br": "Fear in the Night",
+   "releases": [
+    {
+     "title": "Fear in the Night.1947.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/Fear_in_the_Night/Fear_in_the_Night_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:589643d96da0d20ae484edd1da6a1dc3eda24b9f&dn=Fear_in_the_Night&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.72,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "Fear_in_the_Night",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/1aNGOSWDnIrQY2aZK1nkD87WiEt.jpg",
+   "backdrop_path": "/xFHlAqckVDSaeKbleVJl1CewA2L.jpg",
+   "year": 1947,
+   "genre_ids": [
+    80,
+    18,
+    9648,
+    53
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "34078": {
+   "tmdb_id": 34078,
+   "type": "movie",
+   "title_pt_br": "O Grito da Caveira",
+   "releases": [
+    {
+     "title": "The Screaming Skull.1958.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/TheScreamingSkull/TheScreamingSkull_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:7f117b97dfafb8658fc7f2ab49dab5b904fadb11&dn=TheScreamingSkull&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 3.97,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "TheScreamingSkull",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/dvobVaHdaPn0y7KNZT6Nfmgohr0.jpg",
+   "backdrop_path": "/eo5PeRTaCRQq2K52sT72obtqBiD.jpg",
+   "year": 1958,
+   "genre_ids": [
+    53,
+    27
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "117836": {
+   "tmdb_id": 117836,
+   "type": "movie",
+   "title_pt_br": "Fantasma da Rua 42",
+   "releases": [
+    {
+     "title": "Phantom of 42nd St.1945.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/phantom_of_42nd_st/phantom_of_42nd_st_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:75781699723fbdbea722f3f52b0dce00dbc380ff&dn=phantom_of_42nd_st&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.95,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "phantom_of_42nd_st",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/xfc7agRLndVXQh2DeSq4eBpyVpw.jpg",
+   "backdrop_path": "/tR1tkT6cK55JHHDGTfcZZ6V8OpC.jpg",
+   "year": 1945,
+   "genre_ids": [
+    9648,
+    53
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "22657": {
+   "tmdb_id": 22657,
+   "type": "movie",
+   "title_pt_br": "Argélia",
+   "releases": [
+    {
+     "title": "Algiers.1938.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/Algiers_/Algiers__archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:50220b130d4505fd18b19a4b676682585ae1aab4&dn=Algiers_&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 2.25,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "Algiers_",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/kT5QwflKAnOu9Abj927dL90xOgA.jpg",
+   "backdrop_path": "/wmfTTdJCxJfyQYsSn9PiuPhJiCR.jpg",
+   "year": 1938,
+   "genre_ids": [
+    18,
+    10749,
+    80
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "214601": {
+   "tmdb_id": 214601,
+   "type": "movie",
+   "title_pt_br": "Rogue of the Range",
+   "releases": [
+    {
+     "title": "Rogue Of The Range.1936.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/rogue_on_the_range/rogue_on_the_range_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:49f7dc6c8b640e714621609ece8f669a84789f38&dn=rogue_on_the_range&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.21,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "rogue_on_the_range",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/AqqSIJpFMcIXWBKDrrnNJQXS8Ev.jpg",
+   "backdrop_path": null,
+   "year": 1936,
+   "genre_ids": [
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "499814": {
+   "tmdb_id": 499814,
+   "type": "movie",
+   "title_pt_br": "The Legend of Marilyn Monroe",
+   "releases": [
+    {
+     "title": "The Legend of Marilyn Monroe.1964.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/The_Legend_of_Marilyn_Monroe/The_Legend_of_Marilyn_Monroe_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:4e49e1a8f2adab4dde49109f04ef60eca32ceec3&dn=The_Legend_of_Marilyn_Monroe&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.53,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "The_Legend_of_Marilyn_Monroe",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/utwkHZ6x4bjXBMrxGY79Ht7oBQV.jpg",
+   "backdrop_path": "/AbZdJwGNiO9ddiwS5YRQW1QkAh7.jpg",
+   "year": 1966,
+   "genre_ids": [
+    99
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "29835": {
+   "tmdb_id": 29835,
+   "type": "movie",
+   "title_pt_br": "Calúnia",
+   "releases": [
+    {
+     "title": "Cause for Alarm!.1951.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/cause_for_alarm_1951/cause_for_alarm_1951_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:a7032339f44199fda0128a54fc689db1c8c36331&dn=cause_for_alarm_1951&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 5.31,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "cause_for_alarm_1951",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/6yCPB2jBvNEhG6qFej8ay3Xn5KU.jpg",
+   "backdrop_path": "/kDzbdmi7tEGnCWp4f4V8SRRidoY.jpg",
+   "year": 1951,
+   "genre_ids": [
+    53,
+    18,
+    80
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "22351": {
+   "tmdb_id": 22351,
+   "type": "movie",
+   "title_pt_br": "Alias John Law",
+   "releases": [
+    {
+     "title": "Alias John Law.1935.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/alias_john_law/alias_john_law_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:583c19c8de6feb795841eb4d9beaac2fffd8dbf7&dn=alias_john_law&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 3.49,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "alias_john_law",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/2cWLB3Fiib5F00ZnTdrdpALYrhU.jpg",
+   "backdrop_path": "/ao45hIL0qPbbMKDN6idPf3vN8Xh.jpg",
+   "year": 1935,
+   "genre_ids": [
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "390759": {
+   "tmdb_id": 390759,
+   "type": "movie",
+   "title_pt_br": "Killer Dill",
+   "releases": [
+    {
+     "title": "Killer Dill.1947.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/killer_dill/killer_dill_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:39ec46085df9323f3ea0fd5dfc78912d8210a835&dn=killer_dill&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.33,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "killer_dill",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/iBlSq6JmKxGdHRXo32h8Ffh35E2.jpg",
+   "backdrop_path": "/mr33AMStbi8uAvOAUcXOERC8GL1.jpg",
+   "year": 1947,
+   "genre_ids": [
+    80,
+    35
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "233373": {
+   "tmdb_id": 233373,
+   "type": "movie",
+   "title_pt_br": "Uncle Joe",
+   "releases": [
+    {
+     "title": "Uncle Joe.1941.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/UncleJoe/UncleJoe_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:2bf269b1b8875c859bf3a37b018b953f4afdb428&dn=UncleJoe&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 1.89,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "UncleJoe",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/oCmVYdFgDYTF9YicmxAkig5Hf0X.jpg",
+   "backdrop_path": null,
+   "year": 1941,
+   "genre_ids": [
+    10402,
+    35
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "18702": {
+   "tmdb_id": 18702,
+   "type": "movie",
+   "title_pt_br": "Pot o' Gold",
+   "releases": [
+    {
+     "title": "Pot o' Gold.1941.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/pot_o_gold/pot_o_gold_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:1d610c6c5bdc56bd3b5979ce21fda4b06b436948&dn=pot_o_gold&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.05,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "pot_o_gold",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/kjBp97HVXVtMqzOZUIkjT1oZrQz.jpg",
+   "backdrop_path": "/ukvCYNPbThf0Pz3k0vxuHAYjlt9.jpg",
+   "year": 1941,
+   "genre_ids": [
+    35,
+    10402,
+    10749
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "99994": {
+   "tmdb_id": 99994,
+   "type": "movie",
+   "title_pt_br": "Hearts in Bondage",
+   "releases": [
+    {
+     "title": "Hearts In Bondage.1936.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/hearts_in_bondage/hearts_in_bondage_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:aec31e8b8e088c6da88211284f8dc6ae9eb9d58c&dn=hearts_in_bondage&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 3.3,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "hearts_in_bondage",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/5rsuLbAiIVLW70rgvghcpF1tfB0.jpg",
+   "backdrop_path": "/hLZkOUrh4m7DfYbzv3jDmzmag43.jpg",
+   "year": 1936,
+   "genre_ids": [
+    18,
+    36
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "31287": {
+   "tmdb_id": 31287,
+   "type": "movie",
+   "title_pt_br": "Eegah",
+   "releases": [
+    {
+     "title": "Eegah.1962.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/Eegah/Eegah_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:9bbfd407c75dfc44a71e721b88e62f1d3fe3a23c&dn=Eegah&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 3.59,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "Eegah",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/mvLmdKwnzVjPNdRs5FYBgL3xQWB.jpg",
+   "backdrop_path": "/pm7SvDzGFqmWNJ3cBNB51jSNSrC.jpg",
+   "year": 1962,
+   "genre_ids": [
+    27,
+    878,
+    10749
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "90708": {
+   "tmdb_id": 90708,
+   "type": "movie",
+   "title_pt_br": "Go Down, Death!",
+   "releases": [
+    {
+     "title": "Go Down, Death!.1944.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/go_down_death/go_down_death_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:6041821bc9f783f940a5660fb8c1026944f0dd04&dn=go_down_death&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 3.42,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "go_down_death",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/IHvCPm1YrHHBp5hoL1nMs1cmsS.jpg",
+   "backdrop_path": null,
+   "year": 1944,
+   "genre_ids": [
+    18
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "18807": {
+   "tmdb_id": 18807,
+   "type": "movie",
+   "title_pt_br": "Abrindo Horizontes",
+   "releases": [
+    {
+     "title": "Kansas Pacific.1953.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/kansas_pacific/kansas_pacific_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:2dcd47102fc0e63c2601154dfb8f0390ba330f8d&dn=kansas_pacific&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.44,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "kansas_pacific",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/120EM5z5NHZlJIHi4BX83oKezAi.jpg",
+   "backdrop_path": "/imYpLjpLsPrhmiTJb7dgOBD3IQy.jpg",
+   "year": 1953,
+   "genre_ids": [
+    37,
+    28
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "131322": {
+   "tmdb_id": 131322,
+   "type": "movie",
+   "title_pt_br": "Little Men",
+   "releases": [
+    {
+     "title": "Little Men.1940.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/little_men/little_men_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:7bc5f5e91a659d37f894200234286264514d053d&dn=little_men&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.99,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "little_men",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/2EFThpyyGiU4vYBZzmjCkuDdr1O.jpg",
+   "backdrop_path": "/7YxywnDiuOhb87yEJRd3tVHLEXQ.jpg",
+   "year": 1940,
+   "genre_ids": [
+    18,
+    35
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "37692": {
+   "tmdb_id": 37692,
+   "type": "movie",
+   "title_pt_br": "The Admiral Was a Lady",
+   "releases": [
+    {
+     "title": "The Admiral Was A Lady.1950.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/TheAdmiralWasaLadyEdmondOBrien1950mooorip/TheAdmiralWasaLadyEdmondOBrien1950mooorip_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:79926f10e9de283cc79de458f3264965dfb372d9&dn=TheAdmiralWasaLadyEdmondOBrien1950mooorip&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 2.02,
+     "license": "Domínio público (archive.org)",
+     "origin": "internet_archive",
+     "archive_id": "TheAdmiralWasaLadyEdmondOBrien1950mooorip",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/gQWspJtDh40YhSSJFismfhf81Gk.jpg",
+   "backdrop_path": "/d8MtjXlAaHhldql0R8WxuxsUdav.jpg",
+   "year": 1950,
+   "genre_ids": [
+    35,
+    10749
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "165655": {
+   "tmdb_id": 165655,
+   "type": "movie",
+   "title_pt_br": "Ouro Escondido",
+   "releases": [
+    {
+     "title": "Ghost-Town Gold.1936.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/three_mesquiteers/three_mesquiteers_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:8fa39c7a0208dff190677d9d70f594336eadbb81&dn=three_mesquiteers&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.56,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "three_mesquiteers",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/yTIvGWpRAEwzTs9e1NVedExStJm.jpg",
+   "backdrop_path": "/290cKSIWOZzDfQ2Qg5lVzJvJncq.jpg",
+   "year": 1936,
+   "genre_ids": [
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "30671": {
+   "tmdb_id": 30671,
+   "type": "movie",
+   "title_pt_br": "Born Innocent",
+   "releases": [
+    {
+     "title": "Born Innocent.1974.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/born-innocent/born-innocent_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:1fb0e89ab33d5ff11f8607ded47aa27381eb2c39&dn=born-innocent&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 2.48,
+     "license": "Domínio público (archive.org)",
+     "origin": "internet_archive",
+     "archive_id": "born-innocent",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/mqQlrmCB3UEVSxs9GocOn0r7QG8.jpg",
+   "backdrop_path": "/anMzDs9Hyo3Z5fMrUoeGqwIEh1D.jpg",
+   "year": 1976,
+   "genre_ids": [
+    18,
+    10770
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "150063": {
+   "tmdb_id": 150063,
+   "type": "movie",
+   "title_pt_br": "Seven Were Saved",
+   "releases": [
+    {
+     "title": "Seven Were Saved.1947.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/seven_were_saved/seven_were_saved_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:5bb2db4d36fd8b459941e3014f3299ebd3fc3006&dn=seven_were_saved&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.56,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "seven_were_saved",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/mdNOCXEgCWLBjbpVFYRPNmFXHeV.jpg",
+   "backdrop_path": "/6QG7Bf6VcuA307PdiV91kYP8ImZ.jpg",
+   "year": 1947,
+   "genre_ids": [
+    18,
+    12
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "96255": {
+   "tmdb_id": 96255,
+   "type": "movie",
+   "title_pt_br": "Feras que Foram Homens",
+   "releases": [
+    {
+     "title": "Three Came Home.1950.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/ThreeCameHomeClaudetteColbertHankrip/ThreeCameHomeClaudetteColbertHankrip_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:af1e72797ada960545d8118e73f5dbb1e9184026&dn=ThreeCameHomeClaudetteColbertHankrip&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 2.21,
+     "license": "Domínio público (archive.org)",
+     "origin": "internet_archive",
+     "archive_id": "ThreeCameHomeClaudetteColbertHankrip",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/hZczNjqrzjYiyuzhuKyPEcDwul2.jpg",
+   "backdrop_path": "/6SJvlYWpfQXmYgH53ifyNOK1Gmt.jpg",
+   "year": 1950,
+   "genre_ids": [
+    10752,
+    18
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "39803": {
+   "tmdb_id": 39803,
+   "type": "movie",
+   "title_pt_br": "Dead Man Drinking",
+   "releases": [
+    {
+     "title": "Dead Man Drinking.2008.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/DeadManDrinking/DeadManDrinking_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:4acf7a0c05a1791968bf8579387027ffa1941b3f&dn=DeadManDrinking&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 7.52,
+     "license": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+     "origin": "internet_archive",
+     "archive_id": "DeadManDrinking",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/5z8YlQApRFd3FXb4lACANzcJlTT.jpg",
+   "backdrop_path": null,
+   "year": 2008,
+   "genre_ids": [
+    35
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "258653": {
+   "tmdb_id": 258653,
+   "type": "movie",
+   "title_pt_br": "Northwest Trail",
+   "releases": [
+    {
+     "title": "Northwest Trail.1945.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/northwest_trail/northwest_trail_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:14e9490942ba36ddd72730c5d8cfdbe24b18a157&dn=northwest_trail&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 3.6,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "northwest_trail",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/uNW0WDd9UyMsJpAmmn5RXpdqxOX.jpg",
+   "backdrop_path": "/krA9Ts96xmxDDWWe89eSwnhYOj6.jpg",
+   "year": 1945,
+   "genre_ids": [
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "18987": {
+   "tmdb_id": 18987,
+   "type": "movie",
+   "title_pt_br": "O Corcunda de Notre-Dame",
+   "releases": [
+    {
+     "title": "The Hunchback of Notre Dame.1923.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/The_Hunchback_of_Notre_Dame/The_Hunchback_of_Notre_Dame_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:8f4fb449ae07436b675cd7ca91b7c50465f8dd36&dn=The_Hunchback_of_Notre_Dame&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 3.42,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "The_Hunchback_of_Notre_Dame",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/3oheTQrTuqS1jPUW6GOc65ZbM5u.jpg",
+   "backdrop_path": "/3Y5AcPiWQ3kzyIzdrbdV43dWrgX.jpg",
+   "year": 1923,
+   "genre_ids": [
+    10749,
+    18,
+    27
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "108282": {
+   "tmdb_id": 108282,
+   "type": "movie",
+   "title_pt_br": "Murder on Flight 502",
+   "releases": [
+    {
+     "title": "Murder on Flight 502.1975.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/MurderOnFlight502/MurderOnFlight502_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:6a858b3cc315c1ea7626e75cf8193153874517fe&dn=MurderOnFlight502&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 2.21,
+     "license": "http://creativecommons.org/licenses/by/3.0/",
+     "origin": "internet_archive",
+     "archive_id": "MurderOnFlight502",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/klnCQBkC41QIyY76JPpZbM9HbyX.jpg",
+   "backdrop_path": "/zYAzbmJSEWKDamgkAx5Il7m8ws8.jpg",
+   "year": 1975,
+   "genre_ids": [
+    18,
+    53,
+    9648
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "133070": {
+   "tmdb_id": 133070,
+   "type": "movie",
+   "title_pt_br": "South of Santa Fe",
+   "releases": [
+    {
+     "title": "South of Santa Fe.1942.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/south_of_santa_fe/south_of_santa_fe_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:d5e3b00f8f9fd9fac412946b84d6b9ea60870860&dn=south_of_santa_fe&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "nl",
+     "quality": "480p",
+     "size_gb": 4.3,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "south_of_santa_fe",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/n4qmwtgu5WnGGWJUL3K5dvqwF71.jpg",
+   "backdrop_path": "/wb8J2GiEEoL3ymmbxChXGB0S3q2.jpg",
+   "year": 1942,
+   "genre_ids": [
+    37
+   ],
+   "original_language": "nl",
+   "is_anime": false
+  },
+  "59706": {
+   "tmdb_id": 59706,
+   "type": "movie",
+   "title_pt_br": "Noite de Terror",
+   "releases": [
+    {
+     "title": "Fatal Hour.1940.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/fatal_hour/fatal_hour_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:5c9407475f6f8850779c45b23d80417fe0fbc67d&dn=fatal_hour&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 5.17,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "fatal_hour",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/usYO02PkjbQi3n4QJcpgvUWy2Zn.jpg",
+   "backdrop_path": "/6tNz5rG7Cr5cy0MFsK7aEu9KOnk.jpg",
+   "year": 1940,
+   "genre_ids": [
+    9648,
+    53,
+    80
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "27341": {
+   "tmdb_id": 27341,
+   "type": "movie",
+   "title_pt_br": "The Sign of Four: Sherlock Holmes' Greatest Case",
+   "releases": [
+    {
+     "title": "The Sign Of Four.1932.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/The_Sign_OF_Four/The_Sign_OF_Four_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:d68171f67804f12daa5e254caaf17b12b960ac61&dn=The_Sign_OF_Four&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.84,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "The_Sign_OF_Four",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/fc0eckcO70V8PJ8nCw1RfPumSwh.jpg",
+   "backdrop_path": "/rw1Wcv4pC59sP6Syk8wHK9uICu6.jpg",
+   "year": 1932,
+   "genre_ids": [
+    9648,
+    53,
+    10749,
+    80,
+    28
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "79258": {
+   "tmdb_id": 79258,
+   "type": "movie",
+   "title_pt_br": "The House of Secrets",
+   "releases": [
+    {
+     "title": "House of Secrets.1936.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/house_of_secrets/house_of_secrets_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:4355e72aabbddacb829c7e0246c91f66efb8aacc&dn=house_of_secrets&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.29,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "house_of_secrets",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/tSoPC0q0ExX8lAF8k7HVORhUhUz.jpg",
+   "backdrop_path": "/1KZSuM3fAY54ltL7lBhc3umWrMF.jpg",
+   "year": 1936,
+   "genre_ids": [
+    53,
+    9648
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "242067": {
+   "tmdb_id": 242067,
+   "type": "movie",
+   "title_pt_br": "Windjammer",
+   "releases": [
+    {
+     "title": "Windjammer.1937.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/windjammer/windjammer_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:539275b66a41ba1136562719f93e26abc87fb2ca&dn=windjammer&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 4.91,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "windjammer",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/9Z1tWNsuDqBnVFmiX5KQ34dPZAI.jpg",
+   "backdrop_path": "/meHVzIfs1wvqJR9thNFUfirEGt8.jpg",
+   "year": 1937,
+   "genre_ids": [
+    28,
+    12
+   ],
+   "original_language": "en",
+   "is_anime": false
+  },
+  "1718": {
+   "tmdb_id": 1718,
+   "type": "movie",
+   "title_pt_br": "A Estrada de Santa Fé",
+   "releases": [
+    {
+     "title": "Santa Fe Trail.1940.WEBRip.x264.[archive.org]",
+     "torrent_url": "https://archive.org/download/Santa_Fe_Trail/Santa_Fe_Trail_archive.torrent",
+     "magnet": "magnet:?xt=urn:btih:bb00ec60fb010f36c993fdb505a4996ee4864a29&dn=Santa_Fe_Trail&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&ws=https%3A%2F%2Farchive.org%2Fdownload%2F",
+     "webseed": true,
+     "language": "en",
+     "quality": "480p",
+     "size_gb": 6.26,
+     "license": "http://creativecommons.org/licenses/publicdomain/",
+     "origin": "internet_archive",
+     "archive_id": "Santa_Fe_Trail",
+     "added_at": "2026-11-21T05:31:38Z",
+     "codec": "x264",
+     "source": "WEBRip",
+     "dual_audio": false,
+     "score": 50.4
+    }
+   ],
+   "poster_path": "/y2oWpAMBwZdnZj1zX5uz6yE5xf2.jpg",
+   "backdrop_path": "/ejLNia8P6YrKbIpvEsihs0Ei8wL.jpg",
+   "year": 1940,
+   "genre_ids": [
+    37
+   ],
+   "original_language": "en",
+   "is_anime": false
   }
  },
  "_state": {
-  "archive_offset": 400
+  "archive_offset": 500
  }
 }
