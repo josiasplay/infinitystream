@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T14:13:09Z",
+ "generated_at": "2026-11-21T21:02:47Z",
  "total_titles": 404,
  "titles": {
   "45745": {
@@ -15,7 +15,7 @@
      "language": "en",
      "source": "WEB-DL",
      "codec": "x264",
-     "seeders": 258,
+     "seeders": 248,
      "size_gb": 0.13,
      "magnet": "magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F",
      "torrent_url": "https://webtorrent.io/torrents/sintel.torrent",
@@ -24,7 +24,7 @@
      "origin": "manual",
      "score": 80.2,
      "added_at": "2026-11-20T00:00:00Z",
-     "last_seen_seeders": 258,
+     "last_seen_seeders": 248,
      "dual_audio": false
     }
    ],
@@ -49,7 +49,7 @@
      "language": "en",
      "source": "WEB-DL",
      "codec": "x264",
-     "seeders": 433,
+     "seeders": 419,
      "size_gb": 0.26,
      "magnet": "magnet:?xt=urn:btih:dd8255ecdc7ca55fb0bbf81323d87062db1f6d1c&dn=Big+Buck+Bunny&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F",
      "torrent_url": "https://webtorrent.io/torrents/big-buck-bunny.torrent",
@@ -58,7 +58,7 @@
      "origin": "manual",
      "score": 83.7,
      "added_at": "2026-11-20T00:00:00Z",
-     "last_seen_seeders": 433,
+     "last_seen_seeders": 419,
      "dual_audio": false
     }
    ],
@@ -83,7 +83,7 @@
      "language": "en",
      "source": "WEB-DL",
      "codec": "x264",
-     "seeders": 70,
+     "seeders": 74,
      "size_gb": 0.57,
      "magnet": "magnet:?xt=urn:btih:209c8226b299b308beaf2b9cd3fb49212dbd13ec&dn=Tears+of+Steel&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F",
      "torrent_url": "https://webtorrent.io/torrents/tears-of-steel.torrent",
@@ -92,7 +92,7 @@
      "origin": "manual",
      "score": 70.6,
      "added_at": "2026-11-20T00:00:00Z",
-     "last_seen_seeders": 70,
+     "last_seen_seeders": 74,
      "dual_audio": false
     }
    ],
