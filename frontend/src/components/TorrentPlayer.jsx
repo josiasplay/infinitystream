@@ -6,6 +6,7 @@ import { bridgeConfig } from '../api/bridge.js'
 import { LANGUAGE_LABEL } from '../utils/releaseParser.js'
 import ConnectionStats from './ConnectionStats.jsx'
 
+const LANG_CODES = { 'pt-BR': ['pt', 'por', 'pob', 'pt-br'], en: ['en', 'eng'], ja: ['ja', 'jpn'] }
 const UNSUPPORTED_MSG = 'Seu navegador não suporta este formato. Use Chrome/Edge atualizado ou instale o app.'
 
 function fmtTime (s) {
@@ -32,7 +33,7 @@ export default function TorrentPlayer ({ release, releases = [], onSelectRelease
   const containerRef = useRef(null)
   const videoRef = useRef(null)
   const codecs = useMemo(() => codecSupport(), [])
-  const { status, error, activeMode, stats, subtitles, offset, seekTo, mediaDuration } =
+  const { status, error, activeMode, stats, info, subtitles, offset, seekTo, mediaDuration } =
     useTorrent(release, { bridge, mode: prefs.mode, videoRef, language: prefs.language, mkv: codecs.mkv })
   const isRemux = activeMode === 'remux'
   const seekTimer = useRef(null)
@@ -78,18 +79,15 @@ export default function TorrentPlayer ({ release, releases = [], onSelectRelease
     }
   }
 
-  // Legendas externas (.srt/.vtt) acompanham o deslocamento do remux
+  // Legendas acompanham o deslocamento do remux (o <video> recomeça em 0 a cada seek)
   useEffect(() => {
-    const v = videoRef.current
-    if (!v) return
-    for (const track of v.textTracks) {
-      for (const cue of track.cues || []) {
-        if (cue._s === undefined) { cue._s = cue.startTime; cue._e = cue.endTime }
+    for (const s of subtitles) {
+      for (const cue of s.track._all) {
         cue.startTime = cue._s - offset
         cue.endTime = cue._e - offset
       }
     }
-  }, [offset, subIndex, subtitles])
+  }, [offset, subtitles])
 
   // Eventos do <video>
   useEffect(() => {
@@ -147,16 +145,26 @@ export default function TorrentPlayer ({ release, releases = [], onSelectRelease
 
   // Legendas: ativa a pt por padrão quando chegam
   useEffect(() => {
-    if (subtitles.length && prefs.subtitles && subIndex === -1) {
-      const pt = subtitles.findIndex(s => s.lang.startsWith('pt'))
-      if (pt >= 0 || prefs.language !== 'pt-BR' || release?.language !== 'pt-BR') setSubIndex(Math.max(pt, 0))
+    if (!subtitles.length || !prefs.subtitles || subIndex !== -1) return
+    const wanted = LANG_CODES[prefs.language] || []
+    const matches = s => wanted.includes((s.lang || '').toLowerCase())
+    const audioLang = (info?.audio_lang || '').toLowerCase()
+    const audioIsMine = audioLang ? wanted.includes(audioLang) : release?.language === prefs.language
+    if (audioIsMine) {
+      // Áudio no meu idioma (ex.: dublado): só a legenda "forçada" (placas, falas em outra língua)
+      const forced = subtitles.findIndex(s => s.forced && matches(s))
+      if (forced >= 0) setSubIndex(forced)
+    } else {
+      // Áudio original em outra língua: liga a legenda completa no meu idioma
+      const full = subtitles.findIndex(s => !s.forced && matches(s))
+      if (full >= 0) setSubIndex(full)
     }
-  }, [subtitles]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [subtitles, info]) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     const v = videoRef.current
     if (!v) return
-    ;[...v.textTracks].forEach((t, i) => { t.mode = i === subIndex ? 'showing' : 'disabled' })
+    subtitles.forEach((s, i) => { s.track.mode = i === subIndex ? 'showing' : 'disabled' })
   }, [subIndex, subtitles])
 
   // Atalhos de teclado (refs: o listener é registrado uma vez, mas precisa do jump/offset atuais)
@@ -201,7 +209,6 @@ export default function TorrentPlayer ({ release, releases = [], onSelectRelease
           preload='auto'
           onClick={() => (v?.paused ? v.play() : v?.pause())}
         >
-          {subtitles.map((s, i) => <track key={s.src} kind='subtitles' src={s.src} srcLang={s.lang} label={s.label} default={i === subIndex} />)}
         </video>
 
         {(busy || shownError || formatWarning) && (
@@ -253,7 +260,7 @@ export default function TorrentPlayer ({ release, releases = [], onSelectRelease
               )}
               <select aria-label='Legendas' className='rounded bg-zinc-900/90 px-2 py-1 text-xs' value={subIndex} onChange={e => setSubIndex(Number(e.target.value))}>
                 <option value={-1}>Legendas: off</option>
-                {subtitles.map((s, i) => <option key={s.src} value={i}>CC {s.label}</option>)}
+                {subtitles.map((s, i) => <option key={`${s.label}-${i}`} value={i}>CC {s.label}</option>)}
               </select>
               {releases.length > 1 && (
                 <select

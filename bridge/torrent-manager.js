@@ -134,6 +134,7 @@ export class TorrentManager {
   }
 
   async remove (infoHash) {
+    this.onRemove?.(infoHash) // ex.: parar extração de legendas
     const t = this.get(infoHash)
     this.meta.delete(infoHash)
     if (!t) return false

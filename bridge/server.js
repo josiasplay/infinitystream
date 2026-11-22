@@ -14,7 +14,8 @@ import rateLimit from 'express-rate-limit'
 import { Server as TrackerServer } from 'bittorrent-tracker'
 import { config } from './config.js'
 import { TorrentManager, mainVideoFile, describeFiles } from './torrent-manager.js'
-import { probe, playbackPlan, remux } from './media.js'
+import fs from 'node:fs'
+import { probe, playbackPlan, remux, pickSubtitles, extractSubtitles, subtitleStatus, stopSubtitles } from './media.js'
 
 // URL interna do /stream (ffmpeg/ffprobe leem por aqui, com Range, sem passar pelo Nginx)
 const localStreamUrl = (infoHash, index) =>
@@ -38,6 +39,7 @@ tracker.on('warning', err => console.warn('[tracker]', err.message))
 
 // A bridge anuncia no próprio tracker via loopback (o Nginx só é usado pelo navegador)
 const manager = new TorrentManager({ trackerUrl: `ws://127.0.0.1:${config.port}/tracker` })
+manager.onRemove = infoHash => stopSubtitles(infoHash) // GC também encerra a extração
 
 // ---------- app HTTP ----------
 const app = express()
@@ -54,7 +56,7 @@ function originAllowed (origin) {
 app.use(cors({
   origin: (origin, cb) => cb(null, originAllowed(origin)),
   allowedHeaders: ['Content-Type', 'X-Bridge-Token', 'Range'],
-  exposedHeaders: ['Content-Range', 'Accept-Ranges', 'Content-Length'],
+  exposedHeaders: ['Content-Range', 'Accept-Ranges', 'Content-Length', 'X-Subs-Complete'],
   methods: ['GET', 'POST', 'DELETE', 'HEAD', 'OPTIONS'],
   maxAge: 600
 }))
@@ -151,6 +153,14 @@ app.post('/add', auth, async (req, res, next) => {
       remux_reason: plan.reason,
       remux_url: plan.remux ? `${config.publicUrl}/remux/${torrent.infoHash}/${mainIndex}?a=${plan.audioIndex}` : null,
       duration: media?.duration || null,
+      audio_lang: media?.audio?.[plan.audioIndex]?.lang || null,
+      // Legendas embutidas: o player busca os .vtt (parciais) enquanto a extração avança
+      subs: pickSubtitles(media).map(s => ({
+        lang: s.lang,
+        label: s.label,
+        forced: s.forced,
+        url: `${config.publicUrl}/subs/${torrent.infoHash}/${mainIndex}/${s.i}.vtt`
+      })),
       infoHash: torrent.infoHash,
       name: torrent.name,
       quality: req.body.quality || null,
@@ -211,17 +221,41 @@ app.get('/stream/:infoHash/:fileIndex', auth, (req, res) => {
 })
 
 // MP4 fragmentado com áudio AAC. Sem Range: o seek é feito pedindo de novo com ?t=segundos.
-app.get('/remux/:infoHash/:fileIndex', auth, (req, res) => {
+// Legenda embutida em WebVTT. Começa a extração no 1º pedido (não no /add, para o
+// pré-aquecimento não baixar filmes inteiros). Devolve o que já foi extraído;
+// X-Subs-Complete: 1 avisa o player que pode parar de buscar.
+app.get('/subs/:infoHash/:fileIndex/:track.vtt', auth, async (req, res) => {
+  const t = isHash(req.params.infoHash) && manager.get(req.params.infoHash)
+  const index = Number(req.params.fileIndex)
+  const track = Number(req.params.track)
+  if (!t?.files?.[index] || !Number.isInteger(track)) return res.status(404).json({ error: 'legenda não encontrada' })
+  manager.touch(t.infoHash)
+  const key = `${t.infoHash}/${index}`
+  const localUrl = localStreamUrl(t.infoHash, index)
+  const tracks = pickSubtitles(await probe(localUrl, key))
+  if (!tracks.some(s => s.i === track)) return res.status(404).json({ error: 'faixa de legenda inválida' })
+  const dir = `${config.cacheDir}/.subs/${t.infoHash}_${index}`
+  extractSubtitles({ key, localUrl, tracks, dir, fs })
+  const done = subtitleStatus(key)?.done
+  const text = await fs.promises.readFile(`${dir}/${track}.vtt`, 'utf8').catch(() => 'WEBVTT\n\n')
+  res.set({ 'Content-Type': 'text/vtt; charset=utf-8', 'Cache-Control': 'no-store', 'X-Subs-Complete': done ? '1' : '0' })
+  res.send(text)
+})
+
+app.get('/remux/:infoHash/:fileIndex', auth, async (req, res) => {
   const t = isHash(req.params.infoHash) && manager.get(req.params.infoHash)
   const index = Number(req.params.fileIndex)
   if (!t?.files?.[index]) return res.status(404).json({ error: 'arquivo não encontrado' })
   if (req.method === 'HEAD') return res.status(200).set('Content-Type', 'video/mp4').end()
   const start = Math.max(0, Math.min(Number(req.query.t) || 0, 24 * 3600))
   const audioIndex = Math.max(0, Math.min(Number(req.query.a) || 0, 32))
+  const localUrl = localStreamUrl(t.infoHash, index)
+  const info = await probe(localUrl, `${t.infoHash}/${index}`)
   remux(req, res, {
-    localUrl: localStreamUrl(t.infoHash, index),
+    localUrl,
     start,
     audioIndex,
+    channels: info?.audio?.[audioIndex]?.channels || 2,
     onOpen: () => manager.viewerOpened(t.infoHash),
     onClose: () => manager.viewerClosed(t.infoHash)
   })
@@ -230,6 +264,7 @@ app.get('/remux/:infoHash/:fileIndex', auth, (req, res) => {
 app.delete('/torrent/:infoHash', auth, async (req, res, next) => {
   try {
     if (!isHash(req.params.infoHash)) return res.status(400).json({ error: 'infoHash inválido' })
+    stopSubtitles(req.params.infoHash)
     const removed = await manager.remove(req.params.infoHash)
     res.status(removed ? 200 : 404).json({ removed })
   } catch (err) { next(err) }

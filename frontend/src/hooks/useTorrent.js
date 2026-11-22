@@ -29,8 +29,23 @@ async function getClient () {
   return clientPromise
 }
 
-function srtToVtt (srt) {
-  return 'WEBVTT\n\n' + srt.replace(/\r/g, '').replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, '$1.$2')
+const TIME_RE = /(?:(\d+):)?(\d{1,2}):(\d{2})[.,](\d{1,3})/
+const toSec = m => (Number(m[1] || 0) * 3600) + Number(m[2]) * 60 + Number(m[3]) + Number(m[4].padEnd(3, '0')) / 1000
+
+/** Lê SRT ou WebVTT (inclusive parcial, ainda sendo escrito) → [{start, end, text}]. */
+export function parseCues (text) {
+  const cues = []
+  for (const block of text.replace(/\r/g, '').split(/\n{2,}/)) {
+    const lines = block.split('\n')
+    const at = lines.findIndex(l => l.includes('-->'))
+    if (at < 0) continue
+    const [a, b] = lines[at].split('-->')
+    const s = TIME_RE.exec(a)
+    const e = TIME_RE.exec(b || '')
+    const body = lines.slice(at + 1).join('\n').trim()
+    if (s && e && body) cues.push({ start: toSec(s), end: toSec(e), text: body })
+  }
+  return cues
 }
 
 function subtitleLang (name) {
@@ -44,9 +59,11 @@ export function useTorrent (release, { bridge, mode = 'auto', videoRef, language
   const [activeMode, setActiveMode] = useState(null)
   const [stats, setStats] = useState(null)
   const [info, setInfo] = useState(null)
-  const [subtitles, setSubtitles] = useState([]) // [{label, lang, src}]
+  // [{label, lang, forced, track: TextTrack}] — track._all guarda todos os cues (mesmo com a faixa desligada)
+  const [subtitles, setSubtitles] = useState([])
   // Remux: o <video> começa sempre em 0; `offset` é a posição real do filme onde ele começou
   const [offset, setOffset] = useState(0)
+  const offsetRef = useRef(0)
   const remuxRef = useRef(null) // { url } quando a bridge está fazendo remux de áudio
   const cleanupRef = useRef([])
 
@@ -56,6 +73,7 @@ export function useTorrent (release, { bridge, mode = 'auto', videoRef, language
     if (!video) return
     const target = Math.max(0, seconds)
     if (!remuxRef.current) { video.currentTime = target; return }
+    offsetRef.current = target
     setOffset(target)
     setStatus('buffering')
     video.src = `${remuxRef.current.url}&t=${target.toFixed(1)}&token=${encodeURIComponent(bridge.token)}`
@@ -72,6 +90,7 @@ export function useTorrent (release, { bridge, mode = 'auto', videoRef, language
 
     setStatus('adding'); setError(null); setStats(null); setSubtitles([]); setActiveMode(null); setOffset(0)
     remuxRef.current = null
+    offsetRef.current = 0
 
     const fail = err => {
       if (ctrl.signal.aborted) return
@@ -80,23 +99,61 @@ export function useTorrent (release, { bridge, mode = 'auto', videoRef, language
       setStatus('error')
     }
 
-    async function loadSubtitles (added) {
-      const subs = added.files.filter(f => f.subtitle)
-      const out = []
-      for (const f of subs.slice(0, 8)) {
+    const tokenQ = `token=${encodeURIComponent(bridge.token)}`
+
+    /** Acrescenta à faixa os cues ainda não vistos (os .vtt crescem enquanto a bridge extrai). */
+    function addCues (track, cues) {
+      for (const c of cues.slice(track._all.length)) {
         try {
-          const res = await fetch(`${bridge.url}/stream/${added.infoHash}/${f.index}?token=${encodeURIComponent(bridge.token)}`, { signal: ctrl.signal })
-          const text = await res.text()
-          const vtt = /\.srt$/i.test(f.name) ? srtToVtt(text) : text
-          const src = URL.createObjectURL(new Blob([vtt], { type: 'text/vtt' }))
-          later(() => URL.revokeObjectURL(src))
+          const cue = new VTTCue(c.start - offsetRef.current, c.end - offsetRef.current, c.text)
+          cue._s = c.start; cue._e = c.end
+          track.addCue(cue)
+          track._all.push(cue)
+        } catch { /* cue malformado: ignora */ }
+      }
+    }
+
+    function newTrack (label, lang) {
+      const track = video.addTextTrack('subtitles', label, lang)
+      track.mode = 'disabled'
+      track._all = []
+      return track
+    }
+
+    async function loadSubtitles (added) {
+      const out = []
+      // 1) Arquivos .srt/.vtt soltos no torrent (baixa uma vez)
+      for (const f of added.files.filter(f => f.subtitle).slice(0, 6)) {
+        try {
+          const text = await fetch(`${bridge.url}/stream/${added.infoHash}/${f.index}?${tokenQ}`, { signal: ctrl.signal }).then(r => r.text())
           const lang = subtitleLang(f.name)
-          out.push({ label: lang === 'und' ? f.name : lang, lang, src })
+          const track = newTrack(lang === 'und' ? f.name : lang, lang)
+          addCues(track, parseCues(text))
+          out.push({ label: track.label, lang, forced: false, track })
         } catch { /* legenda opcional */ }
       }
-      // pt primeiro
-      out.sort((a, b) => (b.lang.startsWith('pt') ? 1 : 0) - (a.lang.startsWith('pt') ? 1 : 0))
-      if (!ctrl.signal.aborted) setSubtitles(out)
+      // 2) Legendas embutidas no MKV, extraídas pela bridge aos poucos
+      const embedded = (added.subs || []).map(s => ({ ...s, track: newTrack(s.label, s.lang), complete: false }))
+      out.push(...embedded)
+      if (ctrl.signal.aborted) return
+      out.sort((a, b) => (b.lang.startsWith('pt') || b.lang === 'por' ? 1 : 0) - (a.lang.startsWith('pt') || a.lang === 'por' ? 1 : 0))
+      setSubtitles(out)
+
+      const refresh = async s => {
+        try {
+          const res = await fetch(`${s.url}?${tokenQ}`, { signal: ctrl.signal })
+          if (!res.ok) return
+          addCues(s.track, parseCues(await res.text()))
+          s.complete = res.headers.get('X-Subs-Complete') === '1'
+        } catch { /* tenta de novo no próximo ciclo */ }
+      }
+      // Busca a faixa visível a cada 10s (as outras só quando forem escolhidas) até completar
+      const poll = () => embedded
+        .filter(s => !s.complete && (s.track.mode === 'showing' || s.track._all.length === 0))
+        .forEach(refresh)
+      poll()
+      const timer = setInterval(poll, 10_000)
+      later(() => clearInterval(timer))
     }
 
     function startHttp (added) {
@@ -181,7 +238,7 @@ export function useTorrent (release, { bridge, mode = 'auto', videoRef, language
         const added = await bridgeFetch(bridge, '/add', { method: 'POST', body, signal: ctrl.signal, timeoutMs: 60000 })
         if (ctrl.signal.aborted) return
         setInfo(added)
-        loadSubtitles(added)
+        loadSubtitles(added).catch(() => {})
         const p2pPossible = 'serviceWorker' in navigator && typeof RTCPeerConnection !== 'undefined'
         // Padrão = HTTP direto da bridge: começa em <1s e não gasta CPU da VM com WebRTC.
         // P2P só quando escolhido nas Configurações e quando o arquivo toca sem remux.
