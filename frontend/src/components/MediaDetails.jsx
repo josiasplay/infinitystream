@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { img, pickTrailer, tmdb } from '../api/tmdb.js'
 import { catalogEntry } from '../api/catalog.js'
-import { bridgeConfig } from '../api/bridge.js'
+import { bridgeConfig, bridgeFetch } from '../api/bridge.js'
 import { usePreferences } from '../hooks/usePreferences.js'
 import { codecSupport, useNetworkQuality } from '../hooks/useNetworkQuality.js'
 import { rankReleases } from '../utils/qualityRanker.js'
@@ -34,6 +34,20 @@ export default function MediaDetails ({ type, id, catalog, onBack }) {
     [entry, maxQuality, prefs.language, isAnime, hevc]
   )
   const best = ranked[0] || null
+
+  // Pré-aquecimento: ao abrir a página, a bridge já busca metadados/primeiras peças e
+  // analisa os codecs da melhor fonte. Quando o usuário clica em Play, está tudo pronto.
+  const bestKey = best && (best.magnet || best.torrent_url)
+  useEffect(() => {
+    if (!best || !bridge.url || !bridge.token || playing) return
+    const ctrl = new AbortController()
+    const timer = setTimeout(() => {
+      const source = best.webseed && best.torrent_url ? { torrent_url: best.torrent_url } : best.magnet ? { magnet: best.magnet } : { torrent_url: best.torrent_url }
+      bridgeFetch(bridge, '/add', { method: 'POST', body: { ...source, lang: prefs.language, mkv: codecSupport().mkv }, signal: ctrl.signal, timeoutMs: 60000 })
+        .catch(() => { /* só aquecimento: erros aparecem de verdade no Play */ })
+    }, 800) // evita disparar ao passar rápido por vários títulos
+    return () => { clearTimeout(timer); ctrl.abort() }
+  }, [bestKey, bridge.url, bridge.token]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const title = details?.title || details?.name || entry?.title_pt_br || ''
   const year = (details?.release_date || details?.first_air_date || '').slice(0, 4)

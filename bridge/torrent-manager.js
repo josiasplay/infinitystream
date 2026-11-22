@@ -59,6 +59,15 @@ export class TorrentManager {
       }
     }
 
+    // Metadados já vistos antes? Usa o .torrent salvo em disco: abre na hora, sem esperar peers/DHT
+    if (existingHash) {
+      const cached = await fs.promises.readFile(this._metaPath(existingHash)).catch(() => null)
+      if (cached) torrentId = cached
+      // Outro pedido (ex.: pré-aquecimento + Play) pode ter adicionado enquanto líamos o disco
+      const t = this.get(existingHash.toLowerCase())
+      if (t) { this.touch(t.infoHash); return this._ready(t) }
+    }
+
     let torrent
     try {
       torrent = this.client.add(torrentId, {
@@ -74,11 +83,25 @@ export class TorrentManager {
     return this._ready(torrent)
   }
 
+  _metaPath (infoHash) {
+    return `${config.cacheDir}/.meta/${infoHash.toLowerCase()}.torrent`
+  }
+
+  /** Guarda o .torrent (só metadados, poucos KB) para os próximos Plays serem instantâneos. */
+  _saveMeta (torrent) {
+    const file = this._metaPath(torrent.infoHash)
+    if (!torrent.torrentFile || fs.existsSync(file)) return
+    fs.promises.mkdir(`${config.cacheDir}/.meta`, { recursive: true })
+      .then(() => fs.promises.writeFile(file, torrent.torrentFile))
+      .catch(err => console.warn('[meta]', err.message))
+  }
+
   _ready (torrent) {
     const finish = () => {
       if (!this.meta.has(torrent.infoHash)) {
         this.meta.set(torrent.infoHash, { lastAccess: Date.now(), viewers: 0, addedAt: Date.now() })
       }
+      this._saveMeta(torrent)
       this._selectMainFile(torrent)
       return torrent
     }
