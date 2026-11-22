@@ -213,21 +213,28 @@ class ProwlarrSource:
             title_pt = movie.get("title") or ""
             title_en = movie.get("original_title") or title_pt
             year = int(movie["release_date"][:4]) if movie.get("release_date") else None
-            query = f"{title_en} {year}" if year else title_en
-            print(f"Buscando no Prowlarr: {title_pt} ({query})")
+            # 1º título original; se não achar nada (ex.: original em japonês), tenta o título em PT
+            queries = [title_en] + ([title_pt] if title_pt and title_pt != title_en else [])
+            candidates = []
+            for name in queries:
+                if time.monotonic() - started > self.time_budget:
+                    break
+                query = f"{name} {year}" if year else name
+                print(f"Buscando no Prowlarr: {title_pt} ({query})")
+                try:
+                    t0 = time.monotonic()
+                    raw = self._search(query, ids)
+                    print(f"  -> {len(raw)} resultados em {time.monotonic() - t0:.0f}s")
+                except requests.Timeout:
+                    print(f"  -> Timeout após {self.search_timeout}s (indexador lento). Pulando.")
+                    continue
+                except Exception as e:  # noqa: BLE001
+                    print(f"  -> Erro na busca: {e}")
+                    continue
+                candidates = [r for r in raw if title_matches(r.get("title", ""), [title_en, title_pt], year)]
+                if candidates:
+                    break
 
-            try:
-                t0 = time.monotonic()
-                raw = self._search(query, ids)
-                print(f"  -> {len(raw)} resultados em {time.monotonic() - t0:.0f}s")
-            except requests.Timeout:
-                print(f"  -> Timeout após {self.search_timeout}s (indexador lento). Pulando.")
-                continue
-            except Exception as e:  # noqa: BLE001
-                print(f"  -> Erro na busca: {e}")
-                continue
-
-            candidates = [r for r in raw if title_matches(r.get("title", ""), [title_en, title_pt], year)]
             candidates.sort(key=lambda r: r.get("seeders") or 0, reverse=True)
 
             releases, seen = [], set()
