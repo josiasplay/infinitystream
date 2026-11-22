@@ -1,5 +1,6 @@
 import requests
 import urllib.parse
+from config import TMDB_API_KEY
 
 class ProwlarrSource:
     def __init__(self, api_key: str, base_url: str):
@@ -9,10 +10,13 @@ class ProwlarrSource:
 
     def fetch(self, tmdb, budget):
         results = []
-        # Busca os filmes populares no TMDB para ter o que pesquisar
+        # Busca os filmes populares DIRETO da API do TMDB (ignorando a classe do projeto)
+        tmdb_url = f"https://api.themoviedb.org/3/movie/popular?api_key={TMDB_API_KEY}&language=pt-BR&page=1"
+        
         try:
-            # ATENÇÃO: Verifique no seu tmdb_client.py se a função tem esse nome exato (ex: get_popular_movies)
-            popular = tmdb.get_popular_movies(page=1) 
+            resp_tmdb = requests.get(tmdb_url, timeout=10)
+            resp_tmdb.raise_for_status()
+            popular = resp_tmdb.json().get("results", [])
         except Exception as e:
             print(f"Erro ao buscar no TMDB: {e}")
             return results
@@ -30,7 +34,7 @@ class ProwlarrSource:
             print(f"Buscando no Prowlarr: {title}")
             query = urllib.parse.quote(title)
             
-            # 2000 = Filmes, 5000 = TV (Séries)
+            # Busca no Prowlarr (2000 = Filmes, 5000 = TV)
             url = f"{self.base_url}/api/v1/search?query={query}&categories=2000,5000"
             
             try:
