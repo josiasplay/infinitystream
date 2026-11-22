@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T04:40:26Z",
+ "generated_at": "2026-11-22T04:54:43Z",
  "total_titles": 5,
  "titles": {
   "45745": {
@@ -19,9 +19,9 @@
      "codec": "x264",
      "source": "WEB-DL",
      "dual_audio": false,
-     "score": 40.0,
-     "seeders": 256,
-     "last_seen_seeders": 256
+     "score": 80.1,
+     "seeders": 252,
+     "last_seen_seeders": 252
     }
    ],
    "poster_path": "/l98Zns4oQe1BSvbF4hJ8oL6VSf0.jpg",
@@ -52,9 +52,9 @@
      "codec": "x264",
      "source": "WEB-DL",
      "dual_audio": false,
-     "score": 40.0,
-     "seeders": 419,
-     "last_seen_seeders": 419
+     "score": 83.7,
+     "seeders": 420,
+     "last_seen_seeders": 420
     }
    ],
    "poster_path": "/i9jJzvoXET4D9pOkoEwncSdNNER.jpg",
@@ -85,7 +85,7 @@
      "codec": "x264",
      "source": "WEB-DL",
      "dual_audio": false,
-     "score": 40.0,
+     "score": 70.6,
      "seeders": 68,
      "last_seen_seeders": 68
     }
