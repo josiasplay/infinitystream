@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T04:54:43Z",
+ "generated_at": "2026-11-22T04:56:49Z",
  "total_titles": 5,
  "titles": {
   "45745": {
@@ -19,7 +19,7 @@
      "codec": "x264",
      "source": "WEB-DL",
      "dual_audio": false,
-     "score": 80.1,
+     "score": 80.0,
      "seeders": 252,
      "last_seen_seeders": 252
     }
