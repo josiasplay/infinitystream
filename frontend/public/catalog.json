@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-22T11:45:03Z",
- "total_titles": 5,
+ "generated_at": "2026-11-22T14:29:00Z",
+ "total_titles": 3,
  "titles": {
   "45745": {
    "tmdb_id": 45745,
@@ -19,7 +19,7 @@
      "codec": "x264",
      "source": "WEB-DL",
      "dual_audio": false,
-     "score": 80.0,
+     "score": 80.3,
      "seeders": 262,
      "last_seen_seeders": 262
     }
@@ -52,7 +52,7 @@
      "codec": "x264",
      "source": "WEB-DL",
      "dual_audio": false,
-     "score": 83.7,
+     "score": 83.9,
      "seeders": 435,
      "last_seen_seeders": 435
     }
@@ -85,7 +85,7 @@
      "codec": "x264",
      "source": "WEB-DL",
      "dual_audio": false,
-     "score": 70.6,
+     "score": 70.7,
      "seeders": 69,
      "last_seen_seeders": 69
     }
@@ -99,128 +99,6 @@
    ],
    "original_language": "en",
    "is_anime": false
-  },
-  "1726": {
-   "tmdb_id": 1726,
-   "type": "movie",
-   "title_pt_br": "Homem de Ferro",
-   "releases": [
-    {
-     "title": "Iron.Man.2008.WEB-DL.2160p [Brazilian] [Eng]",
-     "magnet": "http://163.176.35.160:9696/1/download?apikey=ade0bb896c314815b705396b58ee9884&link=cDQ1OTM2ak5qMEZreUkwZGRqQjQybWUxNk1EUTZnb01kUHFiMWZ0L3l0Qm9xMFVkUlg1NlNmbzB5cFQxb1BKQjFZUnB2emkxVmlNMW1Md1o4b1BmRmRzZlFyT1FpN1ZicEdQd2ZmRFByeXlQK0hnTmlZMlpTNWlwY2ZKVnE5YVRBUW84TEYzN2xKc21FdnRXbE4rNnNBPT0&file=Iron.Man.2008.WEB-DL.2160p+%5BBrazilian%5D+%5BEng%5D",
-     "size": 24696061952,
-     "added_at": "2026-11-22T04:40:24Z",
-     "quality": "4K",
-     "codec": "Unknown",
-     "source": "WEB-DL",
-     "language": "pt-BR",
-     "dual_audio": false,
-     "score": 61.0
-    },
-    {
-     "title": "The.Man.In.The.Iron.Mask.1998.WEB-DL.1080p.x264 [Brazilian] [Eng]",
-     "magnet": "http://163.176.35.160:9696/1/download?apikey=ade0bb896c314815b705396b58ee9884&link=bVp1bngxUVczK1kwV0ovWk4rZkFUWTdCRFVQSWVNWFVwc0V0ZXhoSC9vV0RxQlhPL01vL0ZKQUh0Z0RCVkpzOGJONHdIMzdBSmZmbklSV01VNEl0NEtUbFBCWU1PRjNJSmlZUzlFRkJHcmJQTDV1S0llQmZIMWZSWUNFb0xHb1Iyai9qRDBRdDN4cm9GMHZHOENGWnM2bUwvemV0L3VEb2tScjVHY3ozMVZaYnNVZU5XOHdXUFRqeEdUMkxkK0RuUnhPVk5neklFTFNCdGcrWHBaWDJtVWFWRytZVmV2b01Xc1JjR3p5N1kvb2lDalk1bVcvUWZic3VKLzYzelRMeFBsa3FSRDZrdnJPN1JZNmIrQWpmMlgzdUpweUx5YS8wYVA5WVV2QVNnSnZyeERNcEJ6V1EwTlhjWEY0VTJuYXZLV0tad2NUN3c5ZHBlVVBhY0hYTVBEWTdXRmU1b3FmaGhEdlBOWk05eDhYMWQxd3Y5Z3JjZUw4Qi9nR3FEZXdQdVJXTC9VdmJ3anN3M1J2dmxPSVl6WC9OWnh1YjFZaEtoclRCTDg3SkZ6UUFRTmZvWjRjbHRWKzNIakVHa092eHk2cUo3aDhQLzRUNVlkYXFERnJPbjVMb3phR0k2MUZMcWY0bTdKT08xeE9STGdCamZ5NU5pczUvSHkxSFN6S1dBLzUzNkhvVHZlMW5LUXZmb3BiaUZoZVUrSWpIRFFaQkNzSURubk9nQ29GaUlqb2VtR0ZhenozdnBOcVV6c1NLTjc5N0MrTk9nVS9LZmR1M3lGczEwcEp6dzZZNlRVWnovTjlNcC8ybGZ2dFh0cW83VlI3R3J4d0hWY1picVgwczBnV2tvNC9uL2ExMHVFeThtd0daY3Q5V2g2SVlYdGI5WXVNRDFhU1FwLzA4YjZ0bU5VN1RzYS80Szc0OVdUbnB0UXl2N2NZOFJveC9JelMvU2hJY0lEWW1KYUFHWTZMSy9FNlNoSHVDRlB5OVhCbVJUcTh5TTY2bkZBdzYyUGZGUDJoRmJEdzRXRUJBL3BrUEdkZC9ORldQK1FrN1pzVGJPS2tPNUJDN3RjUzF4U1ZLeFdwUUcwdnpHdjFoUXFqTjlWaGVTR2EwWVVIRjUxTHEzRytxbU5zZ2tpL3ExZGp1cmR3elNSMGFueG93cmNWSmViTmM1eG13eFVTM0FkZGttRlZrdDRUZDE5TkM2eEFuZ3E3YUd6RTdxTStYK0JRUEdERHA0SGprSHY0N3VNWHNvdVp1YksyUXY2Y1RhK2c4Nlhya2hvY2hVczJCNlNvZ1o0U0xuNDdzenRPTDNnMmFlaysrbEo0OE5uV0RBVEw5UEZOMXVsN205VlV3SzNlTXlFbzZrNTJGRS84bUFIaGRVVFMyL0hBQ1c1WlhEdDBMRUNHZm1rckhzcHZBdk9uS0lVNytMOXc0bWlhdmo4SVRWZGwxcmluMjAwZ0tCSC9lSGF1N3VVQWZZT1FWV2pYWWZFSmRpcFY1c0ZJUERBTHpDOWthSzFNdFpnQnV4QnpJMWRqRnQrbERkNWxzalNxdTFoYTB5YmRmN0RZQjlwdDByTndpckZFaXdadHdZMEdYZGM2QktFRTdtOEdyTGRUZGFFNXJEejhxK0VvbTA0RVI1MEoyVExOYjhZVVppQUQ2RXZOQTQ0Uk5CLzA9&file=The.Man.In.The.Iron.Mask.1998.WEB-DL.1080p.x264+%5BBrazilian%5D+%5BEng%5D",
-     "size": 2587717795,
-     "added_at": "2026-11-22T04:40:24Z",
-     "quality": "1080p",
-     "codec": "x264",
-     "source": "WEB-DL",
-     "language": "pt-BR",
-     "dual_audio": false,
-     "score": 55.0
-    }
-   ]
-  },
-  "1368337": {
-   "tmdb_id": 1368337,
-   "type": "movie",
-   "title_pt_br": "A Odisseia",
-   "releases": [
-    {
-     "title": "The.Odyssey.2026.WEB-DL.2160p.x265 [Brazilian] [Eng]",
-     "magnet": "http://163.176.35.160:9696/1/download?apikey=ade0bb896c314815b705396b58ee9884&link=Wnl6MmxKNHVtczhab3VPSlR4NXdKbjFaeHhOOUowelJaOXVCMGhDYk9PYlgyNkVLeHpFZUQ3c2kxT0Izc0wrRGZxNDNCaW05bGhERHlDK1ZHYTZVL3BzSVVaY0g1RytIandVekk5YWU2Q1ZrcFBCMldKdFNvaWdGWHRTSWJnNUNMY0JNOW1ld2pYTXE2K0QxamtrZHpFaW1HL3dIdjhocEVwLy8vYkVhMUdBKzN2Y2FHQ2h1VzdhdDNmRGJaU3dnSmVVMTVQanJoSzlxOTF3YmZGU2V0bkJMRWpjcTFVOGIzaFkvYTBkRllrcElXVUd6Rndwd25VSmxJUjluaE94M2JyYnkyV09MY2pvNm1tMm10bDVXa0hYcU1yYUxBbXBuUFRlR3BUeUk5RkF2aEZMeEsyRm1xUnI2MVIwOEpkdkswNVdoN0RLL0tuMTUraW9NSk1lSXI2bkZEWXh5N0hSNjYwVGJqMkMralpDc2tpMEZCTXZMSkZtNWtXbTlNYWwxUExDQklyZ2xzMFEzQmNXM050eWp4dGpEOElzcmRycTErV3BJcmFKcHl4b2N5Q2xCMkdsODBnUW0yUHc0Z1REOUlZcGdSMDZYTTRjRDdZWUhGWG14azB2T1VNTGU1UTlzRTAyZzczd09MY1dhcThpejA1K3BSS1FFT255M00xNXNBS1BsTXBJbThiRXdIdVo5T3diajFZSDBVL0J0N2VXNmpWeS9weGFmMFhSODlKYi9iRU5UV3ozOXBKeVlMbTRWclE3YTNRdWVOOEpNbjEwbHpyS01nb0kyRFlQUy93YjB4ODVxbVBWcEk0UlY2dEtPcklEc09Jc0xoRGswTytiQ2RtQTRFV0RkR3dBcmdGSjcrVDB4RXdQeHRoTWtIYlh2ZGxYcXhtMzM2U3FDeTRRRXZ6bktJMUJxTmpkVDFzWk0yanJCVmpwSWJoOHdQcTh1SkVkWE9XaG9vdzVHWTc0Wkk3NFVBTUdvRURWUXppWHJqMkRib0RETVJOL3puejZWcE9kSFB3YnVuWFg4RzFqUEVpYW9TL0NXRXZRUllvaDZsWWtKNUk2SFo4dWROaWljTVQ5TmR3bGhFSVJlTXJzVERGZ3l2QkpxYjQzTkNaYmZ3azFCVlI1ODdrZXNybE1YS1VPLzMySjdWdlF5Si9INjFBY21yOWkrNXdVNEtGdmdCdi9sK1RiaVF2YkZEMVVxallDQzlRWmRvMnYzNm9zK1ZLRjd0R1B3aE1wdzVSUnZvcVM5ZmNYRStWOGFxN0c4QXo0T25iSVBLcnhqL2VvMmdBemZlcWNCL1ZOcDliUE9lL2ZFMkdwcEIvQkhiMkJJTmpkeFdwWjdtQWhyOVg2ZFdtemJqcXZtVEdZbkVPUWtTaUtIMlBhRzV3b2RpcGdwTzRucTc3aWx1d2ZaRHpTYWthai9WdXQ1QzRCMVd4QlpkRXNrTHM4WVQ3ZS9nRXVqVGZpZlBnNy96K1RjT0x2b1hDa2lBc21mSVYyaFNqV3hOSExyQ2RFYkt3c2Z4WTVr&file=The.Odyssey.2026.WEB-DL.2160p.x265+%5BBrazilian%5D+%5BEng%5D",
-     "size": 33382633308,
-     "added_at": "2026-11-22T04:40:24Z",
-     "quality": "4K",
-     "codec": "x265",
-     "source": "WEB-DL",
-     "language": "pt-BR",
-     "dual_audio": false,
-     "score": 61.0
-    },
-    {
-     "title": "Ci.Sha.Xiao.Shuo.Jia.A.Writers.Odyssey.2021.BluRay.1080p [Brazilian] [Eng]",
-     "magnet": "http://163.176.35.160:9696/4/download?apikey=ade0bb896c314815b705396b58ee9884&link=K1BoY245Qm92OEd1ck5WTFhyM2NNMXNzNzVKa2kzdnhKQ2VOeDA4aHlWUXdXdXh4alZqT3RXWEhGTTk2bmZiUWdjMkMyNnVPeFl3OHQycDRZRWxkWVFGbWlzT0NsNUxXNVFlUkxYNUFhcVpEaVlFcEw3bFN6bDdQdUplMVlIRmF4KzJNWWpRUE5Yc0xBdGlCVzEwaFhYWFNCUGQzN2NrRk9ZZHdVTW8rL1BtT3daazBiYTYzbUNoNG5hT0tHTGpPS0NPT1hUVktNc2ZndU02Z2ozQWVmalhQSWpWQmpuanRXazEveXEyTUJ6SzBWQXYxVHhaK0Z0Mk85UFpPT2NENHVkNEJkYTdpU3RQbXZNaHdOOHNlbXUzSGpTOXFKMTNSMlBnU2ZSUDRYS281Qzl4ekF2SmhCR0lXMzFVaDZubjc&file=Ci.Sha.Xiao.Shuo.Jia.A.Writers.Odyssey.2021.BluRay.1080p+%5BBrazilian%5D+%5BEng%5D",
-     "size": 3049426780,
-     "added_at": "2026-11-22T04:40:24Z",
-     "quality": "1080p",
-     "codec": "Unknown",
-     "source": "BluRay",
-     "language": "pt-BR",
-     "dual_audio": false,
-     "score": 57.0
-    },
-    {
-     "title": "The.Odyssey.2026.WEB-DL.1080p.x264 [Brazilian] [Eng]",
-     "magnet": "http://163.176.35.160:9696/1/download?apikey=ade0bb896c314815b705396b58ee9884&link=cWJ1dkZCSHpXQW9UWnI2bkJDem9iLzhvR0hCa3RCMGtUazE1cGl1Nm44d0hnaGF4dDBlUE5YaytHR0ptRlZaZlBzdXJpeWhPOHcvdmZNZlZ3ZnkrcHB0YXZQcEwrN0M4UFA2MmV5cndKdlc4alpOemdxbVNtYlg1bURoQ1dLUTZPcHA4N3RsRlYvYkJ5eHlidXdmWWt2YUtxWUJmWDJYeWduZ3pNamhtejE1Z1JxR3JPcUhvOGhRSDE0aUxVTTN5UmRiYWsvZ2UyL09URDF5bXJaU0k0cFh0WWp4MDltV2JuNFpXMk9hNU5tS0RVUUI5cmVFclVDMnBBWjlTdTZ3Q1IxNmlKZk1MSDdDc0RYalNPWWlqNnNRZitSVE4xMDlGbHNUWW5SR1g4OFJ0U1VyRTFrZDByVzk0dTBNdTgrNndyNStFdmNZTmVBK3FSYkR6U3lRYUpVdktvZjRCUUpscC90SXM0cmY5bmI4OEpzWkF3T3hTTEV6blIyWVM5VzE1eHJxWEF5S0xmWGlVSmhlMjlEV2Vqa2dzSWtJMW11NXVmdGNCa1g2RHRWY09UL3B3REowcHFJaTBBZzlnalBoNzZtUG92S0xCVzJjUEpaY1hiN0ZwcXlONXlrREJvYUxnUmcvMVNzSDE1dEY4bXM4dmpwMUJHTDJCc1g0L1dudFI0ZkJ0OHF0YU5FWDV2Z1RtbHRMSmpnVTFQeFpTV3JGNVBhL3BkWGtyejBXUndZQ2FWb1FDdWhmSlJGRDdEYTdHbHo2dk1UcHVTWTJoWmY2OHlWYzhoQVhveFoya25CSFdBaXlUV0paMHBTQmh3bHN3bXlwL3IzcHhOVmRPTjg4UU5WWUtCdVhHYmxOREJQdWxTSU1PODhpMTBBbDlJQnh2ZXhOWkdBSFBHbk15dnhuRHowOWJpb2p6dys0WDV3LzVVTzcwd1U1YlZsMzdlRzB2NmtVSnc0SnRYeStBb21HVjAzdWxqZVdlRDBXZ1ZZUlRIZGV5RGhtQUN0NWdyODE3QVZCdS9BWTFLKzUzcWhkNjUzWFhjMExCc1luZkhwUDJkdW5ub1dSTjFla3ZQa2dGV0J1UUt2aXl2TitLbUQ3Y3ZnZXZmZHpadXdVdnR5dDU1RE95WUhEeHoxTzRxYWZYeUN6QUQxQzBvRDdDWjhYM3R2ajA0R05VRzNGMjhWc0Q5ekFPa0tydTJmM1VXdTlEK3RLLzBMTUR4aWtSdS82TmpOY044OWdId0ljVUh3NXN6ai92YWhPbDF5Sk9adStvUkxSanJPaFhLNzE5eUNWOUZBNnBXeEwxVUlhY1BhNFd4OTdNMGV3WEVyU1lLYzNEUVFRRWFUYWhnaVBISFJFYkVoWkdtdGIweUUwTGJsZzJDbEhuTkdDVy84TFN2U3h1OWswQm92MzRad1hBTy9KL2YwY1pXbGQ0TkdGd1MyU0VMUGJtVktLL21WT0ZBd1h6UFJTNG9yalhuYVpFeTJqdkNvRlllUWl2a2RUWDg4WjRDOTVoMUdYUkw2dDNvUDN2NU9Cb09rcEhWZkt6UW1wSGwrY0RyWUYvb2ZqRTMrSzVxY21qN2JzWmJWbGkxVVdiZTdDeWZMNG5RVThqWGFPbURUZmY3ejFiR2RJb0FGY2dCdmRlOEE9PQ&file=The.Odyssey.2026.WEB-DL.1080p.x264+%5BBrazilian%5D+%5BEng%5D",
-     "size": 3704409292,
-     "added_at": "2026-11-22T04:40:24Z",
-     "quality": "1080p",
-     "codec": "x264",
-     "source": "WEB-DL",
-     "language": "pt-BR",
-     "dual_audio": false,
-     "score": 55.0
-    },
-    {
-     "title": "Cosmos.A.Spacetime.Odyssey.S01.2014.BDRip.720p [Brazilian]",
-     "magnet": "http://163.176.35.160:9696/4/download?apikey=ade0bb896c314815b705396b58ee9884&link=TWduTnZUTERZQWQyWnhCdlhvQUVsZ1lMWEg2OWRzcDQrL3ZlSm1TOUwvbjFPS3BUWE51RTBYSWorWU5nVEQ1UUxSZ3VOdUdWK2VsOFZieGJKZEFTVEZFK3hoaGJiTG1yMWZ0QXB0bzVoM1hqN0txK3IyTC9ic1g2Rk0xYm4vcTBnQnJFeEdxUEZzQ2pkRW5pcFMrSFNuem1FaFhVSVU1bk9pTjdMdW96aDM4bTNVZ1hEcUthekoyeHpLZ09vR0pTR2lTdEMrZkZ1ZEJwRG9sYXRCM2hhVVJBWUJETXlwNnJRWWNLSGgxd3dEdDY0ZlV5NEVIR2VRckg3TGJDd0szc0lVbThwamNlMkJtNjVLT3RlaDBURzY4Nm43dStCOUlWN1BzT3g1Q0VVTWhPazhHdVZZS3BqbUJMMXVCcTIyZUg0TkZrTU9JU2h3QXlqdTl4UjhoelYzenZrQ1hGRjRQMm1HZHIzbEFuWEp5b2diQlFjMEFLZmtTalo2OGRFUExON0hhZVFDZVVyaXpwQ0dBS2xRWWphUk9vZTdiWXlCNlMzWFI0WS9UUG4rYz0&file=Cosmos.A.Spacetime.Odyssey.S01.2014.BDRip.720p+%5BBrazilian%5D",
-     "size": 4735201443,
-     "added_at": "2026-11-22T04:40:24Z",
-     "quality": "720p",
-     "codec": "Unknown",
-     "source": "BluRay",
-     "language": "pt-BR",
-     "dual_audio": false,
-     "score": 49.5
-    },
-    {
-     "title": "2001.2001.1080p.A.Space.Odyssey [Brazilian] [Eng]",
-     "magnet": "http://163.176.35.160:9696/1/download?apikey=ade0bb896c314815b705396b58ee9884&link=OGh4RFFHV0VIM1FncjRXc25lU1ZLR1l5YmNZbTU5Q3dBem03SHg2YlhFQVE2NnFVNUZPNzh5U3R1eHlBOXdqYWxjUGhmdTZxSkFWTGVyNWZGaUdCbXhGUmRxODRlV3A4Q1BRV0pjblJSQytTdzVXYUhCVFJsYmZCS1ZlRFJGcUs2SkF3Q1p1bjc1WDR0UkQ3UHJkc29oY09lVFppbGg4MkFwUnVXWnFOMVZSVzFhbmV3VUtKRTJKWW9VODFUQWVZ&file=2001.2001.1080p.A.Space.Odyssey+%5BBrazilian%5D+%5BEng%5D",
-     "size": 3435973836,
-     "added_at": "2026-11-22T04:40:24Z",
-     "quality": "1080p",
-     "codec": "Unknown",
-     "source": "Unknown",
-     "language": "pt-BR",
-     "dual_audio": false,
-     "score": 45.0
-    },
-    {
-     "title": "2001.2001.A.Space.Odyssey.WEB-DL [Brazilian] [Eng]",
-     "magnet": "http://163.176.35.160:9696/1/download?apikey=ade0bb896c314815b705396b58ee9884&link=WHBvZDF0SmUyTGlETzZSZXkxenpLbnJRUmxobWs1bElzREZIL2l5R3dWS0UxcWR5ZzBiRzdCeDlEVXZlUC9zTk9iMFlGcWJSY3huM2VVMWhNekhOQ25tQXkvRnBnTFcwV0owcGlhOENoVXZQdXlMSk0xek5yMkk3Zy9OaVlEbzJTaHJVSDkrd1RQSUY0dUtJMGN3Sm9IY0hNcks2SWk5L283dWR3RE5Ld0djPQ&file=2001.2001.A.Space.Odyssey.WEB-DL+%5BBrazilian%5D+%5BEng%5D",
-     "size": 2319282339,
-     "added_at": "2026-11-22T04:40:24Z",
-     "quality": "SD",
-     "codec": "Unknown",
-     "source": "WEB-DL",
-     "language": "pt-BR",
-     "dual_audio": false,
-     "score": 35.5
-    },
-    {
-     "title": "Caribbean.Odyssey.Skidrow.2015.WEB-DL [Eng]",
-     "magnet": "http://163.176.35.160:9696/4/download?apikey=ade0bb896c314815b705396b58ee9884&link=S29aRjV5dTBUZGZQWkE0U0dFRzNnWEJTMGdXZUVnb01MNDRPR3F6YndoNGxaTk9KVHdKbzJXS1ZVWERweTJ0eXM5RHZCZnp2bnlnZ2syMlQ5d3R0VDZDRGdOODZNUHJLM0JHcVRtQ08ra0g4VVE4eXFlL2dMeDhBVFpZVjkwREliOXloSWpmY3ZidTc0elhtRDdudm51cy9Db2tSZW5pNEZTOHdEZlk5aG5YVk0yTW9LVXpRdCtRN21JaHk1czlmY2NXZmtZVHZPTDRFU3JGTlN4SXZiRVBxWm1EU2pzRTQzWmw2aGI0T3hDSEM3WHNQNlZNb0I5bTBoRHU3djlsaE9EZU1RVW1IelRFS0l4NHRHdEhvYTZ5NG9ybkFtS0dDM0F3TGVKZjBBSFVwalg5SjQrSUJ0VjlMS1FWVDNOVnQ&file=Caribbean.Odyssey.Skidrow.2015.WEB-DL+%5BEng%5D",
-     "size": 816840704,
-     "added_at": "2026-11-22T04:40:24Z",
-     "quality": "SD",
-     "codec": "Unknown",
-     "source": "WEB-DL",
-     "language": "en",
-     "dual_audio": false,
-     "score": 20.5
-    }
-   ]
   }
  },
  "_state": {}

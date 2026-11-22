@@ -15,6 +15,7 @@ from config import (  # noqa: E402
     MAX_RUNTIME_SECONDS,
     MAX_TITLES_PER_RUN,
     TMDB_API_KEY,
+    load_key,
 )
 from sources import InternetArchiveSource, ManualSource  # noqa: E402
 from tmdb_client import TMDBClient  # noqa: E402
@@ -34,12 +35,13 @@ def main() -> int:
 
     sources = [ManualSource(MANUAL_SOURCES_PATH)]
     
-    # Configuração do Prowlarr lendo do ambiente (GitHub Actions) ou fallback
-    PROWLARR_KEY = os.getenv("PROWLARR_API_KEY", "SUA_CHAVE_AQUI_SE_FOR_TESTAR_LOCAL")
-    PROWLARR_URL = os.getenv("PROWLARR_URL", "http://163.176.35.160:9696")
-    
-    # Substituindo o Internet Archive pelo Prowlarr
-    sources.append(ProwlarrSource(api_key=PROWLARR_KEY, base_url=PROWLARR_URL))
+    # Prowlarr: chave e URL vêm do ambiente (secrets do GitHub Actions) ou de keys/*.txt
+    prowlarr_key = load_key("PROWLARR_API_KEY", "prowlarr_api_key.txt")
+    prowlarr_url = load_key("PROWLARR_URL", "prowlarr_url.txt")
+    if prowlarr_key and prowlarr_url:
+        sources.append(ProwlarrSource(api_key=prowlarr_key, base_url=prowlarr_url, state=state))
+    else:
+        print("[main] PROWLARR_API_KEY/PROWLARR_URL ausentes — pulando o Prowlarr")
 
     # O budget agora vai dividir entre Manual e Prowlarr
     budget = MAX_TITLES_PER_RUN

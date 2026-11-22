@@ -80,7 +80,11 @@ const isHash = h => /^[a-f0-9]{40}$/.test(h)
 
 function validateTorrentId ({ magnet, torrent_url: torrentUrl }) {
   if (magnet) {
-    if (!/^magnet:\?xt=urn:btih:[a-z0-9]{32,40}/i.test(magnet)) throw Object.assign(new Error('magnet inválido'), { status: 400 })
+    // Só hash hex (40) ou base32 (32). Links http do Prowlarr (…/download?apikey=…) caem aqui.
+    if (typeof magnet !== 'string' || !/^magnet:\?xt=urn:btih:([a-f0-9]{40}|[a-z2-7]{32})(&|$)/i.test(magnet)) {
+      console.warn('[add] rejeitado (não é magnet):', String(magnet).slice(0, 60))
+      throw Object.assign(new Error('magnet inválido: o catálogo tem um link que não é magnet (rode o scraper novamente)'), { status: 400 })
+    }
     return magnet
   }
   if (torrentUrl) {
@@ -230,6 +234,10 @@ server.listen(config.port, config.host, () => {
   console.log(`[bridge] URL pública: ${config.publicUrl} | tracker: ${trackerPublicUrl}`)
   console.log(`[bridge] cache: ${config.cacheDir} (máx ${(config.maxCacheBytes / 1024 ** 3).toFixed(0)} GB)`)
 })
+
+// Um torrent malformado não pode derrubar a bridge inteira (e todos os streams junto)
+process.on('unhandledRejection', err => console.error('[unhandledRejection]', err?.message || err))
+process.on('uncaughtException', err => console.error('[uncaughtException]', err?.stack || err))
 
 // Encerramento limpo (PM2 envia SIGINT)
 for (const sig of ['SIGINT', 'SIGTERM']) {

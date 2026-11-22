@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -61,8 +62,28 @@ def merge(catalog: dict, items: list[dict]) -> dict:
     return catalog
 
 
+MAGNET_RE = re.compile(r"^magnet:\?xt=urn:btih:([0-9a-fA-F]{40}|[A-Za-z2-7]{32})(?:&|$)")
+
+
+def playable(rel: dict) -> bool:
+    """Só entra no catálogo o que a bridge consegue abrir: magnet real ou .torrent HTTPS.
+
+    Remove, por exemplo, links proxy do Prowlarr (http://IP:9696/...?apikey=...) que
+    caíram no campo "magnet" — eles quebram o Play e vazam a API key.
+    """
+    magnet = rel.get("magnet")
+    if magnet and not MAGNET_RE.match(magnet):
+        rel.pop("magnet", None)
+    torrent_url = rel.get("torrent_url") or ""
+    if torrent_url and not torrent_url.startswith("https://"):
+        rel.pop("torrent_url", None)
+    return bool(rel.get("magnet") or rel.get("torrent_url"))
+
+
 def write_catalog(catalog: dict, path: Path) -> None:
-    # Remove títulos sem releases (ex.: todos eram CAM ou morreram)
+    # Descarta releases não reproduzíveis e títulos sem releases (CAM, mortos, links quebrados)
+    for entry in catalog.get("titles", {}).values():
+        entry["releases"] = [r for r in entry.get("releases", []) if playable(r)]
     catalog["titles"] = {k: v for k, v in catalog.get("titles", {}).items() if v.get("releases")}
     catalog["generated_at"] = now_iso()
     catalog["total_titles"] = len(catalog["titles"])

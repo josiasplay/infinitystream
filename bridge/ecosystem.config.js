@@ -7,11 +7,12 @@ export const apps = [
   {
     name: 'infinitystream-bridge',
     script: './server.js',
-    node_args: '--max-old-space-size=800',
+    // VM de 1 GB divide RAM com Prowlarr + DFIndexer (Docker) + Nginx: a bridge fica com ~400 MB
+    node_args: '--max-old-space-size=320',
     instances: 1, // WebTorrent mantém estado em memória: nada de cluster
     exec_mode: 'fork',
     autorestart: true,
-    max_memory_restart: '850M', // VM tem 1 GB; deixa folga para o SO/Nginx
+    max_memory_restart: '420M',
     restart_delay: 5000,
     kill_timeout: 10000,
     time: true,

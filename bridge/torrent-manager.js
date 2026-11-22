@@ -59,11 +59,16 @@ export class TorrentManager {
       }
     }
 
-    const torrent = this.client.add(torrentId, {
-      path: config.cacheDir,
-      announce: [this.trackerUrl], // nosso tracker WSS: é por ele que o navegador nos encontra
-      strategy: 'sequential' // prioriza peças em ordem (melhor para streaming)
-    })
+    let torrent
+    try {
+      torrent = this.client.add(torrentId, {
+        path: config.cacheDir,
+        announce: [this.trackerUrl], // nosso tracker WSS: é por ele que o navegador nos encontra
+        strategy: 'sequential' // prioriza peças em ordem (melhor para streaming)
+      })
+    } catch (err) {
+      throw badTorrent(err)
+    }
     torrent.on('error', err => console.error('[torrent]', err.message))
     // Pode já existir com o mesmo hash (torrent_url de algo já carregado)
     return this._ready(torrent)
@@ -86,7 +91,11 @@ export class TorrentManager {
         reject(e)
       }, config.metadataTimeoutMs)
       torrent.once('ready', () => { clearTimeout(timer); resolve(finish()) })
-      torrent.once('error', err => { clearTimeout(timer); reject(err) })
+      torrent.once('error', err => {
+        clearTimeout(timer)
+        if (!torrent.destroyed) torrent.destroy({ destroyStore: true })
+        reject(badTorrent(err))
+      })
     })
   }
 
@@ -157,6 +166,14 @@ export class TorrentManager {
     clearInterval(this.gcTimer)
     await new Promise(resolve => this.client.destroy(resolve))
   }
+}
+
+/** Erro de parse (ex.: parse-torrent "reading 'info'") → 422 com mensagem clara, não 500. */
+function badTorrent (err) {
+  if (err.status) return err
+  const e = new Error(`torrent inválido ou ilegível: ${err.message}`)
+  e.status = /duplicate/i.test(err.message) ? 409 : 422
+  return e
 }
 
 export function mainVideoFile (torrent) {

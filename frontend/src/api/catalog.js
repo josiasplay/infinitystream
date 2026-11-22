@@ -3,6 +3,15 @@ import { filterCam } from '../utils/antiCamFilter.js'
 
 let catalogPromise = null
 
+// A bridge só aceita magnet real ou .torrent HTTPS. Qualquer outra coisa (ex.: link
+// http do Prowlarr) daria 400/500 no Play — melhor nem mostrar.
+const MAGNET_RE = /^magnet:\?xt=urn:btih:([a-f0-9]{40}|[a-z2-7]{32})(&|$)/i
+function isPlayable (r) {
+  if (r.magnet && !MAGNET_RE.test(r.magnet)) delete r.magnet
+  if (r.torrent_url && !r.torrent_url.startsWith('https://')) delete r.torrent_url
+  return Boolean(r.magnet || r.torrent_url)
+}
+
 export function loadCatalog () {
   if (!catalogPromise) {
     catalogPromise = fetch('/catalog.json', { cache: 'no-cache' })
@@ -10,7 +19,7 @@ export function loadCatalog () {
       .then(cat => {
         // Filtro duplo: remove qualquer CAM/TS que tenha escapado do scraper
         for (const [id, entry] of Object.entries(cat.titles || {})) {
-          entry.releases = filterCam(entry.releases || [])
+          entry.releases = filterCam(entry.releases || []).filter(isPlayable)
           if (!entry.releases.length) delete cat.titles[id]
         }
         return cat

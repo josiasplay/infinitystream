@@ -37,6 +37,9 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           MAX_TITLES_PER_RUN: ${{ vars.MAX_TITLES_PER_RUN || '100' }}
           ENABLE_INTERNET_ARCHIVE: ${{ vars.ENABLE_INTERNET_ARCHIVE || '1' }}
+          PROWLARR_API_KEY: ${{ secrets.PROWLARR_API_KEY }}
+          PROWLARR_URL: ${{ secrets.PROWLARR_URL }}
+          PROWLARR_MAX_TITLES: ${{ vars.PROWLARR_MAX_TITLES || '12' }}
         run: python scraper/main.py
 
       - name: Commit do catálogo
