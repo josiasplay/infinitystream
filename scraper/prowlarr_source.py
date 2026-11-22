@@ -10,7 +10,6 @@ class ProwlarrSource:
 
     def fetch(self, tmdb, budget):
         results = []
-        # Busca os filmes populares DIRETO da API do TMDB (ignorando a classe do projeto)
         tmdb_url = f"https://api.themoviedb.org/3/movie/popular?api_key={TMDB_API_KEY}&language=pt-BR&page=1"
         
         try:
@@ -26,38 +25,43 @@ class ProwlarrSource:
             if count >= budget:
                 break
                 
-            title = movie.get("title")
+            title_pt = movie.get("title")
+            title_en = movie.get("original_title")
             tmdb_id = movie.get("id")
-            if not title:
-                continue
-
-            print(f"Buscando no Prowlarr: {title}")
-            query = urllib.parse.quote(title)
             
-            # Busca no Prowlarr (2000 = Filmes, 5000 = TV)
+            # A MÁGICA ACONTECE AQUI: Usa o título em inglês para achar os torrents
+            search_term = title_en if title_en else title_pt
+            
+            print(f"Buscando no Prowlarr: {title_pt} ({search_term})")
+            query = urllib.parse.quote(search_term)
+            
             url = f"{self.base_url}/api/v1/search?query={query}&categories=2000,5000"
             
             try:
-                resp = requests.get(url, headers=self.headers, timeout=15)
+                resp = requests.get(url, headers=self.headers, timeout=30)
                 if resp.status_code == 200:
                     releases = resp.json()
                     magnets = []
                     for r in releases:
-                        if r.get("magnetUrl"):
+                        # Aceita tanto magnet link quanto link .torrent
+                        link = r.get("magnetUrl") or r.get("downloadUrl")
+                        
+                        if link:
                             magnets.append({
                                 "title": r.get("title"),
-                                "magnet": r.get("magnetUrl"),
+                                "magnet": link,
                                 "size": r.get("size")
                             })
                     
                     if magnets:
                         results.append({
                             "tmdb_id": tmdb_id,
-                            "title": title,
+                            "title": title_pt,
                             "releases": magnets
                         })
+                        print(f"  -> Encontrados {len(magnets)} links!")
             except Exception as e:
-                print(f"Erro no Prowlarr para {title}: {e}")
+                print(f"Erro no Prowlarr para {search_term}: {e}")
             
             count += 1
             
