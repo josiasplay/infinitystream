@@ -42,6 +42,10 @@ export const config = {
   gcIntervalMs: num(process.env.GC_INTERVAL_MIN, 5) * 60_000,
   metadataTimeoutMs: num(process.env.METADATA_TIMEOUT_S, 45) * 1000,
   maxConns: num(process.env.MAX_CONNS, 40), // conexões por torrent (RAM!)
+  // Portas FIXAS para peers e DHT: precisam estar liberadas no iptables E na Security List da Oracle.
+  // Com porta aleatória (padrão do WebTorrent) o firewall bloqueia toda conexão de entrada.
+  torrentPort: num(process.env.TORRENT_PORT, 51413), // TCP + UDP (uTP)
+  dhtPort: num(process.env.DHT_PORT, 51414), // UDP
   downloadLimit: num(process.env.DOWNLOAD_LIMIT_KBPS, -1), // -1 = sem limite
   uploadLimit: num(process.env.UPLOAD_LIMIT_KBPS, -1),
   rateLimitPerMin: num(process.env.RATE_LIMIT_PER_MIN, 120),

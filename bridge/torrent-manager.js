@@ -13,6 +13,8 @@ export class TorrentManager {
     this.trackerUrl = trackerUrl
     this.client = new WebTorrent({
       maxConns: config.maxConns,
+      torrentPort: config.torrentPort,
+      dhtPort: config.dhtPort,
       downloadLimit: config.downloadLimit > 0 ? config.downloadLimit * 1024 : -1,
       uploadLimit: config.uploadLimit > 0 ? config.uploadLimit * 1024 : -1
     })
