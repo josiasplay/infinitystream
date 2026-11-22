@@ -121,8 +121,8 @@ function Settings ({ onClose }) {
         <label className='block space-y-1 text-sm'>
           <span>Modo de reprodução</span>
           <select className={field} value={draft.mode} onChange={e => setDraft({ ...draft, mode: e.target.value })}>
-            <option value='auto'>Automático (P2P, cai para HTTP se falhar)</option>
-            <option value='p2p'>Somente P2P (WebRTC)</option>
+            <option value='auto'>Automático (HTTP direto da bridge — recomendado)</option>
+            <option value='p2p'>P2P WebRTC (experimental, mais lento)</option>
             <option value='http'>Somente HTTP via bridge</option>
           </select>
         </label>

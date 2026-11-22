@@ -14,6 +14,11 @@ import rateLimit from 'express-rate-limit'
 import { Server as TrackerServer } from 'bittorrent-tracker'
 import { config } from './config.js'
 import { TorrentManager, mainVideoFile, describeFiles } from './torrent-manager.js'
+import { probe, playbackPlan, remux } from './media.js'
+
+// URL interna do /stream (ffmpeg/ffprobe leem por aqui, com Range, sem passar pelo Nginx)
+const localStreamUrl = (infoHash, index) =>
+  `http://127.0.0.1:${config.port}/stream/${infoHash}/${index}?token=${encodeURIComponent(config.bridgeToken)}`
 
 const startedAt = Date.now()
 const trackerPublicUrl = config.publicUrl.replace(/^http/, 'ws') + '/tracker'
@@ -136,7 +141,16 @@ app.post('/add', auth, async (req, res, next) => {
     const main = mainVideoFile(torrent)
     if (!main) return res.status(422).json({ error: 'nenhum arquivo de vídeo no torrent' })
     const mainIndex = torrent.files.indexOf(main)
+    // Descobre codecs e decide entre Direct Play (/stream) e remux de áudio (/remux)
+    const media = await probe(localStreamUrl(torrent.infoHash, mainIndex), `${torrent.infoHash}/${mainIndex}`)
+    const plan = playbackPlan(media, { lang: req.body.lang, mkvOk: req.body.mkv !== false })
+    console.log(`[add] ${torrent.name} → ${plan.remux ? 'REMUX' : 'direto'} (${plan.reason})`)
     res.json({
+      media,
+      remux: plan.remux,
+      remux_reason: plan.reason,
+      remux_url: plan.remux ? `${config.publicUrl}/remux/${torrent.infoHash}/${mainIndex}?a=${plan.audioIndex}` : null,
+      duration: media?.duration || null,
       infoHash: torrent.infoHash,
       name: torrent.name,
       quality: req.body.quality || null,
@@ -194,6 +208,23 @@ app.get('/stream/:infoHash/:fileIndex', auth, (req, res) => {
   res.once('close', () => { stream.destroy(); done() })
   stream.on('error', err => { console.error('[stream]', err.message); res.destroy() })
   stream.pipe(res)
+})
+
+// MP4 fragmentado com áudio AAC. Sem Range: o seek é feito pedindo de novo com ?t=segundos.
+app.get('/remux/:infoHash/:fileIndex', auth, (req, res) => {
+  const t = isHash(req.params.infoHash) && manager.get(req.params.infoHash)
+  const index = Number(req.params.fileIndex)
+  if (!t?.files?.[index]) return res.status(404).json({ error: 'arquivo não encontrado' })
+  if (req.method === 'HEAD') return res.status(200).set('Content-Type', 'video/mp4').end()
+  const start = Math.max(0, Math.min(Number(req.query.t) || 0, 24 * 3600))
+  const audioIndex = Math.max(0, Math.min(Number(req.query.a) || 0, 32))
+  remux(req, res, {
+    localUrl: localStreamUrl(t.infoHash, index),
+    start,
+    audioIndex,
+    onOpen: () => manager.viewerOpened(t.infoHash),
+    onClose: () => manager.viewerClosed(t.infoHash)
+  })
 })
 
 app.delete('/torrent/:infoHash', auth, async (req, res, next) => {

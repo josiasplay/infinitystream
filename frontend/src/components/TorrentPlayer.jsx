@@ -31,7 +31,11 @@ export default function TorrentPlayer ({ release, releases = [], onSelectRelease
   const bridge = bridgeConfig(prefs)
   const containerRef = useRef(null)
   const videoRef = useRef(null)
-  const { status, error, activeMode, stats, subtitles } = useTorrent(release, { bridge, mode: prefs.mode, videoRef })
+  const codecs = useMemo(() => codecSupport(), [])
+  const { status, error, activeMode, stats, subtitles, offset, seekTo, mediaDuration } =
+    useTorrent(release, { bridge, mode: prefs.mode, videoRef, language: prefs.language, mkv: codecs.mkv })
+  const isRemux = activeMode === 'remux'
+  const seekTimer = useRef(null)
 
   const [playing, setPlaying] = useState(false)
   const [time, setTime] = useState(0)
@@ -44,12 +48,48 @@ export default function TorrentPlayer ({ release, releases = [], onSelectRelease
   const [audioTracks, setAudioTracks] = useState([])
   const [mediaError, setMediaError] = useState(null)
 
-  const codecs = useMemo(() => codecSupport(), [])
   const formatWarning = useMemo(() => {
     if (release?.codec === 'x265' && !codecs.hevc) return UNSUPPORTED_MSG + ' (vídeo H.265/HEVC)'
-    if (/\.mkv\b|mkv/i.test(release?.title || '') && !codecs.mkv) return UNSUPPORTED_MSG + ' (contêiner MKV)'
+    if (/\.mkv\b|mkv/i.test(release?.title || '') && !codecs.mkv && !isRemux) return UNSUPPORTED_MSG + ' (contêiner MKV)'
     return null
-  }, [release, codecs])
+  }, [release, codecs, isRemux])
+
+  // Posição/duração REAIS do filme (no remux o <video> recomeça em 0 a cada seek)
+  const realTime = offset + time
+  const realDuration = mediaDuration || duration
+
+  /** Pula para `target` (segundos do filme). No remux, usa o buffer se já tiver baixado. */
+  function jump (target, { debounce = false } = {}) {
+    const v = videoRef.current
+    if (!v) return
+    const total = Number.isFinite(realDuration) ? realDuration : Infinity
+    target = Math.max(0, Math.min(target, total - 1))
+    if (!isRemux) { v.currentTime = target; return }
+    const local = target - offset
+    for (let i = 0; i < v.buffered.length; i++) {
+      if (local >= v.buffered.start(i) && local <= v.buffered.end(i)) { v.currentTime = local; return }
+    }
+    clearTimeout(seekTimer.current)
+    if (debounce) {
+      setTime(target - offset) // barra acompanha o arraste
+      seekTimer.current = setTimeout(() => seekTo(target), 450)
+    } else {
+      seekTo(target)
+    }
+  }
+
+  // Legendas externas (.srt/.vtt) acompanham o deslocamento do remux
+  useEffect(() => {
+    const v = videoRef.current
+    if (!v) return
+    for (const track of v.textTracks) {
+      for (const cue of track.cues || []) {
+        if (cue._s === undefined) { cue._s = cue.startTime; cue._e = cue.endTime }
+        cue.startTime = cue._s - offset
+        cue.endTime = cue._e - offset
+      }
+    }
+  }, [offset, subIndex, subtitles])
 
   // Eventos do <video>
   useEffect(() => {
@@ -119,15 +159,19 @@ export default function TorrentPlayer ({ release, releases = [], onSelectRelease
     ;[...v.textTracks].forEach((t, i) => { t.mode = i === subIndex ? 'showing' : 'disabled' })
   }, [subIndex, subtitles])
 
-  // Atalhos de teclado
+  // Atalhos de teclado (refs: o listener é registrado uma vez, mas precisa do jump/offset atuais)
+  const jumpRef = useRef(jump)
+  const offsetRef = useRef(offset)
+  jumpRef.current = jump
+  offsetRef.current = offset
   useEffect(() => {
     const onKey = e => {
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return
       const v = videoRef.current
       if (!v) return
       if (e.key === ' ' || e.key === 'k') { e.preventDefault(); v.paused ? v.play() : v.pause() }
-      if (e.key === 'ArrowRight') v.currentTime += 10
-      if (e.key === 'ArrowLeft') v.currentTime -= 10
+      if (e.key === 'ArrowRight') jumpRef.current(offsetRef.current + v.currentTime + 10)
+      if (e.key === 'ArrowLeft') jumpRef.current(offsetRef.current + v.currentTime - 10)
       if (e.key === 'f') toggleFullscreen()
       if (e.key === 'm') v.muted = !v.muted
       if (e.key === 'Escape' && !document.fullscreenElement) onClose?.()
@@ -177,19 +221,19 @@ export default function TorrentPlayer ({ release, releases = [], onSelectRelease
             type='range'
             className='seek w-full'
             min={0}
-            max={Number.isFinite(duration) ? duration : 0}
+            max={Number.isFinite(realDuration) ? realDuration : 0}
             step={1}
-            value={time}
-            onChange={e => { if (v) v.currentTime = Number(e.target.value) }}
+            value={realTime}
+            onChange={e => jump(Number(e.target.value), { debounce: true })}
             aria-label='Posição'
           />
           <div className='flex flex-wrap items-center gap-3 text-sm'>
             <button type='button' onClick={() => (v?.paused ? v.play() : v?.pause())} className='rounded px-2 py-1 hover:bg-white/10' aria-label={playing ? 'Pausar' : 'Reproduzir'}>
               {playing ? '❚❚' : '▶'}
             </button>
-            <button type='button' onClick={() => { if (v) v.currentTime -= 10 }} className='rounded px-2 py-1 hover:bg-white/10' aria-label='Voltar 10 segundos'>−10s</button>
-            <button type='button' onClick={() => { if (v) v.currentTime += 10 }} className='rounded px-2 py-1 hover:bg-white/10' aria-label='Avançar 10 segundos'>+10s</button>
-            <span className='font-mono text-xs text-zinc-300'>{fmtTime(time)} / {fmtTime(duration)}</span>
+            <button type='button' onClick={() => jump(realTime - 10)} className='rounded px-2 py-1 hover:bg-white/10' aria-label='Voltar 10 segundos'>−10s</button>
+            <button type='button' onClick={() => jump(realTime + 10)} className='rounded px-2 py-1 hover:bg-white/10' aria-label='Avançar 10 segundos'>+10s</button>
+            <span className='font-mono text-xs text-zinc-300'>{fmtTime(realTime)} / {fmtTime(realDuration)}</span>
 
             <button type='button' onClick={() => { if (v) v.muted = !v.muted }} className='rounded px-2 py-1 hover:bg-white/10' aria-label={muted ? 'Ativar som' : 'Silenciar'}>
               {muted || volume === 0 ? '🔇' : '🔊'}

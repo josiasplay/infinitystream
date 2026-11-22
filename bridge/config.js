@@ -44,7 +44,12 @@ export const config = {
   maxConns: num(process.env.MAX_CONNS, 40), // conexões por torrent (RAM!)
   downloadLimit: num(process.env.DOWNLOAD_LIMIT_KBPS, -1), // -1 = sem limite
   uploadLimit: num(process.env.UPLOAD_LIMIT_KBPS, -1),
-  rateLimitPerMin: num(process.env.RATE_LIMIT_PER_MIN, 120)
+  rateLimitPerMin: num(process.env.RATE_LIMIT_PER_MIN, 120),
+  // Remux (vídeo copiado + áudio → AAC) para áudio Dolby que o navegador não toca
+  ffmpegPath: process.env.FFMPEG_PATH || 'ffmpeg',
+  ffprobePath: process.env.FFPROBE_PATH || 'ffprobe',
+  probeTimeoutMs: num(process.env.PROBE_TIMEOUT_S, 20) * 1000,
+  maxRemux: num(process.env.MAX_REMUX, 2) // processos ffmpeg simultâneos (CPU da VM)
 }
 
 if (!config.bridgeToken) {

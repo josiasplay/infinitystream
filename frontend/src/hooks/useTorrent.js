@@ -38,14 +38,29 @@ function subtitleLang (name) {
   return m ? m[1].replace('_', '-') : 'und'
 }
 
-export function useTorrent (release, { bridge, mode = 'auto', videoRef }) {
+export function useTorrent (release, { bridge, mode = 'auto', videoRef, language = 'pt-BR', mkv = true }) {
   const [status, setStatus] = useState('idle') // idle | adding | connecting | buffering | playing | error
   const [error, setError] = useState(null)
   const [activeMode, setActiveMode] = useState(null)
   const [stats, setStats] = useState(null)
   const [info, setInfo] = useState(null)
   const [subtitles, setSubtitles] = useState([]) // [{label, lang, src}]
+  // Remux: o <video> começa sempre em 0; `offset` é a posição real do filme onde ele começou
+  const [offset, setOffset] = useState(0)
+  const remuxRef = useRef(null) // { url } quando a bridge está fazendo remux de áudio
   const cleanupRef = useRef([])
+
+  /** Seek que funciona nos dois modos: Range nativo (/stream) ou novo pedido com ?t= (/remux). */
+  function seekTo (seconds) {
+    const video = videoRef.current
+    if (!video) return
+    const target = Math.max(0, seconds)
+    if (!remuxRef.current) { video.currentTime = target; return }
+    setOffset(target)
+    setStatus('buffering')
+    video.src = `${remuxRef.current.url}&t=${target.toFixed(1)}&token=${encodeURIComponent(bridge.token)}`
+    video.play().catch(() => {})
+  }
 
   useEffect(() => {
     if (!release || !videoRef.current) return
@@ -55,7 +70,8 @@ export function useTorrent (release, { bridge, mode = 'auto', videoRef }) {
     const cleanups = cleanupRef.current = []
     const later = fn => cleanups.push(fn)
 
-    setStatus('adding'); setError(null); setStats(null); setSubtitles([]); setActiveMode(null)
+    setStatus('adding'); setError(null); setStats(null); setSubtitles([]); setActiveMode(null); setOffset(0)
+    remuxRef.current = null
 
     const fail = err => {
       if (ctrl.signal.aborted) return
@@ -86,9 +102,16 @@ export function useTorrent (release, { bridge, mode = 'auto', videoRef }) {
     function startHttp (added) {
       if (ctrl.signal.aborted) return
       if (torrent) { torrent.destroy({ destroyStore: true }); torrent = null }
-      setActiveMode('http')
       setStatus('buffering')
-      video.src = `${added.stream_url}?token=${encodeURIComponent(bridge.token)}`
+      if (added.remux_url) {
+        // Áudio Dolby (AC-3/E-AC-3) ou faixa pt não-padrão: bridge copia o vídeo e converte o áudio
+        remuxRef.current = { url: added.remux_url }
+        setActiveMode('remux')
+        video.src = `${added.remux_url}&t=0&token=${encodeURIComponent(bridge.token)}`
+      } else {
+        setActiveMode('http')
+        video.src = `${added.stream_url}?token=${encodeURIComponent(bridge.token)}`
+      }
       video.play().catch(() => { /* autoplay bloqueado: usuário clica play */ })
       // Estatísticas vêm do enxame da bridge
       const poll = setInterval(async () => {
@@ -151,15 +174,18 @@ export function useTorrent (release, { bridge, mode = 'auto', videoRef }) {
     ;(async () => {
       try {
         // Preferimos .torrent HTTP quando é webseed (Internet Archive): metadados instantâneos
-        const body = release.webseed && release.torrent_url
-          ? { torrent_url: release.torrent_url, quality: release.quality }
-          : release.magnet ? { magnet: release.magnet, quality: release.quality } : { torrent_url: release.torrent_url, quality: release.quality }
+        const source = release.webseed && release.torrent_url
+          ? { torrent_url: release.torrent_url }
+          : release.magnet ? { magnet: release.magnet } : { torrent_url: release.torrent_url }
+        const body = { ...source, quality: release.quality, lang: language, mkv }
         const added = await bridgeFetch(bridge, '/add', { method: 'POST', body, signal: ctrl.signal, timeoutMs: 60000 })
         if (ctrl.signal.aborted) return
         setInfo(added)
         loadSubtitles(added)
         const p2pPossible = 'serviceWorker' in navigator && typeof RTCPeerConnection !== 'undefined'
-        if (mode === 'http' || !p2pPossible) startHttp(added)
+        // Padrão = HTTP direto da bridge: começa em <1s e não gasta CPU da VM com WebRTC.
+        // P2P só quando escolhido nas Configurações e quando o arquivo toca sem remux.
+        if (mode !== 'p2p' || !p2pPossible || added.remux) startHttp(added)
         else await startP2P(added).catch(err => (mode === 'auto' ? startHttp(added) : fail(err)))
       } catch (err) { fail(err) }
     })()
@@ -178,7 +204,7 @@ export function useTorrent (release, { bridge, mode = 'auto', videoRef }) {
       video.removeAttribute('src')
       video.load()
     }
-  }, [release, bridge.url, bridge.token, mode]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [release, bridge.url, bridge.token, mode, language]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  return { status, error, activeMode, stats, info, subtitles }
+  return { status, error, activeMode, stats, info, subtitles, offset, seekTo, mediaDuration: info?.duration || null }
 }

@@ -17,7 +17,7 @@ function Stat ({ label, value, warn }) {
 export default function ConnectionStats ({ stats, latencyMs, bufferSec, mode }) {
   return (
     <dl className='flex flex-wrap gap-x-6 gap-y-2 rounded-lg bg-zinc-900/80 px-4 py-3 ring-1 ring-zinc-800'>
-      <Stat label='Modo' value={mode === 'p2p' ? 'P2P (WebRTC)' : mode === 'http' ? 'HTTP (bridge)' : '—'} />
+      <Stat label='Modo' value={mode === 'p2p' ? 'P2P (WebRTC)' : mode === 'http' ? 'HTTP (bridge)' : mode === 'remux' ? 'HTTP + áudio AAC' : '—'} />
       <Stat label='Download' value={fmtSpeed(stats?.downloadSpeed)} />
       <Stat label={stats?.source === 'bridge' ? 'Peers da bridge' : 'Peers'} value={stats?.peers ?? '—'} warn={stats && stats.peers === 0} />
       <Stat label='Ping' value={latencyMs != null ? `${latencyMs} ms` : '—'} warn={latencyMs > 250} />
