@@ -1,5 +1,6 @@
 import requests
 import urllib.parse
+import time
 from config import TMDB_API_KEY
 
 class ProwlarrSource:
@@ -7,6 +8,21 @@ class ProwlarrSource:
         self.name = "Prowlarr"
         self.base_url = base_url.rstrip('/')
         self.headers = {"X-Api-Key": api_key}
+        self.indexer_ids = None
+
+    def _get_indexer_ids(self):
+        if self.indexer_ids is not None:
+            return self.indexer_ids
+        try:
+            resp = requests.get(f"{self.base_url}/api/v1/indexer", headers=self.headers, timeout=30)
+            if resp.status_code == 200:
+                indexers = resp.json()
+                self.indexer_ids = [str(idx['id']) for idx in indexers if idx['enable']]
+                print(f"[Prowlarr] Indexadores ativos: {', '.join(self.indexer_ids)}")
+        except Exception as e:
+            print(f"[Prowlarr] Erro ao buscar indexadores: {e}")
+            self.indexer_ids = []
+        return self.indexer_ids
 
     def fetch(self, tmdb, budget):
         results = []
@@ -20,6 +36,11 @@ class ProwlarrSource:
             print(f"Erro ao buscar no TMDB: {e}")
             return results
 
+        ids = self._get_indexer_ids()
+        if not ids:
+            print("[Prowlarr] Nenhum indexador ativo encontrado. Abortando.")
+            return results
+
         count = 0
         for movie in popular:
             if count >= budget:
@@ -29,39 +50,41 @@ class ProwlarrSource:
             title_en = movie.get("original_title")
             tmdb_id = movie.get("id")
             
-            # A MÁGICA ACONTECE AQUI: Usa o título em inglês para achar os torrents
             search_term = title_en if title_en else title_pt
-            
             print(f"Buscando no Prowlarr: {title_pt} ({search_term})")
             query = urllib.parse.quote(search_term)
             
-            url = f"{self.base_url}/api/v1/search?query={query}&categories=2000,5000"
+            all_magnets = []
+            # Itera sobre cada indexador individualmente
+            for indexer_id in ids:
+                url = f"{self.base_url}/api/v1/search?query={query}&type=search&indexerIds={indexer_id}"
+                try:
+                    time.sleep(1)  # Pausa para não sobrecarregar
+                    resp = requests.get(url, headers=self.headers, timeout=30)
+                    if resp.status_code == 200:
+                        releases = resp.json()
+                        for r in releases:
+                            link = r.get("magnetUrl") or r.get("downloadUrl")
+                            if link:
+                                all_magnets.append({
+                                    "title": r.get("title"),
+                                    "magnet": link,
+                                    "size": r.get("size")
+                                })
+                    elif resp.status_code == 400:
+                        # Se um indexador falhar com 400, apenas o ignoramos e continuamos
+                        print(f"  -> Indexador {indexer_id} indisponível, ignorando.")
+                except Exception as e:
+                    print(f"  -> Erro no indexador {indexer_id}: {e}")
             
-            try:
-                resp = requests.get(url, headers=self.headers, timeout=30)
-                if resp.status_code == 200:
-                    releases = resp.json()
-                    magnets = []
-                    for r in releases:
-                        # Aceita tanto magnet link quanto link .torrent
-                        link = r.get("magnetUrl") or r.get("downloadUrl")
-                        
-                        if link:
-                            magnets.append({
-                                "title": r.get("title"),
-                                "magnet": link,
-                                "size": r.get("size")
-                            })
-                    
-                    if magnets:
-                        results.append({
-                            "tmdb_id": tmdb_id,
-                            "title": title_pt,
-                            "releases": magnets
-                        })
-                        print(f"  -> Encontrados {len(magnets)} links!")
-            except Exception as e:
-                print(f"Erro no Prowlarr para {search_term}: {e}")
+            if all_magnets:
+                results.append({
+                    "tmdb_id": tmdb_id,
+                    "type": "movie",           # <--- CORRIGIDO AQUI
+                    "title_pt_br": title_pt,   # <--- CORRIGIDO AQUI
+                    "releases": all_magnets
+                })
+                print(f"  -> Encontrados {len(all_magnets)} links no total!")
             
             count += 1
             

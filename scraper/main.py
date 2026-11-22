@@ -1,12 +1,4 @@
-"""Entry point do varredor (GitHub Actions).
-
-Fluxo:
- 1. carrega chaves (env > keys/*.txt)
- 2. coleta releases das fontes (Manual + Prowlarr)
- 3. normaliza (anti-CAM, idioma, qualidade, codec, fonte), deduplica e ranqueia
- 4. revalida links antigos
- 5. grava frontend/public/catalog.json (o workflow faz commit/push)
-"""
+"""Entry point do varredor (GitHub Actions)."""
 from __future__ import annotations
 
 import os
@@ -25,15 +17,14 @@ from config import (  # noqa: E402
     TMDB_API_KEY,
 )
 from sources import InternetArchiveSource, ManualSource  # noqa: E402
-from prowlarr_source import ProwlarrSource  # noqa: E402
 from tmdb_client import TMDBClient  # noqa: E402
 from validate_links import validate  # noqa: E402
-
+from prowlarr_source import ProwlarrSource  # noqa: E402
 
 def main() -> int:
     started = time.monotonic()
     if not TMDB_API_KEY:
-        print("ERRO: TMDB_API_KEY ausente (secret do GitHub ou keys/tmdb_api_key.txt)")
+        print("ERRO: TMDB_API_KEY ausente")
         return 1
 
     tmdb = TMDBClient(TMDB_API_KEY)
@@ -41,42 +32,32 @@ def main() -> int:
     state = catalog.setdefault("_state", {})
     failures: list[str] = []
 
-    # Configurações do Prowlarr (lidas do ambiente do GitHub ou fallback local)
-    PROWLARR_KEY = os.getenv("PROWLARR_API_KEY", "")
-    PROWLARR_URL = os.getenv("PROWLARR_URL", "http://163.176.35.160:9696")
-
     sources = [ManualSource(MANUAL_SOURCES_PATH)]
     
-    # Adiciona o Prowlarr se a chave estiver configurada
-    if PROWLARR_KEY:
-        sources.append(ProwlarrSource(api_key=PROWLARR_KEY, base_url=PROWLARR_URL))
-    else:
-        print("[aviso] PROWLARR_API_KEY não encontrada. O Prowlarr será ignorado nesta execução.")
+    # Configuração do Prowlarr lendo do ambiente (GitHub Actions) ou fallback
+    PROWLARR_KEY = os.getenv("PROWLARR_API_KEY", "SUA_CHAVE_AQUI_SE_FOR_TESTAR_LOCAL")
+    PROWLARR_URL = os.getenv("PROWLARR_URL", "http://163.176.35.160:9696")
     
-    # Internet Archive desativado para focar no catálogo PT-BR
-    # if ENABLE_INTERNET_ARCHIVE:
-    #     offset = int(state.get("archive_offset", 0))
-    #     sources.append(InternetArchiveSource(offset=offset))
+    # Substituindo o Internet Archive pelo Prowlarr
+    sources.append(ProwlarrSource(api_key=PROWLARR_KEY, base_url=PROWLARR_URL))
 
+    # O budget agora vai dividir entre Manual e Prowlarr
     budget = MAX_TITLES_PER_RUN
     for source in sources:
         if budget <= 0 or time.monotonic() - started > MAX_RUNTIME_SECONDS:
             print("[main] orçamento de tempo/títulos esgotado")
             break
-        
         print(f"[main] fonte: {source.name} (até {budget} títulos)")
+        
+        # Passa o budget restante para a fonte
         items = source.fetch(tmdb, budget)
-        failures += [f"{source.name}: {i['title']} → {i['error']}" for i in items if "error" in i]
+        
+        failures += [f"{source.name}: {i.get('title', 'Desconhecido')} → {i.get('error')}" for i in items if "error" in i]
         ok = [i for i in items if "error" not in i]
         
         merge(catalog, ok)
         budget -= len(ok)
-        
         print(f"[main] {source.name}: {len(ok)} títulos processados")
-        
-        if isinstance(source, InternetArchiveSource):
-            # Volta ao início após ~2000 itens para revisitar os mais populares
-            state["archive_offset"] = (source.offset + MAX_TITLES_PER_RUN) % 2000
 
     if time.monotonic() - started < MAX_RUNTIME_SECONDS:
         validate(catalog, max_checks=150)
@@ -90,7 +71,6 @@ def main() -> int:
         for f in failures[:50]:
             print("   -", f)
     return 0
-
 
 if __name__ == "__main__":
     sys.exit(main())
