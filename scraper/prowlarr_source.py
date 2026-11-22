@@ -55,24 +55,23 @@ class ProwlarrSource:
             query = urllib.parse.quote(search_term)
             
             all_magnets = []
-            # Itera sobre cada indexador individualmente
             for indexer_id in ids:
                 url = f"{self.base_url}/api/v1/search?query={query}&type=search&indexerIds={indexer_id}"
                 try:
-                    time.sleep(1)  # Pausa para não sobrecarregar
+                    time.sleep(1)
                     resp = requests.get(url, headers=self.headers, timeout=30)
                     if resp.status_code == 200:
                         releases = resp.json()
                         for r in releases:
-                            link = r.get("magnetUrl") or r.get("downloadUrl")
-                            if link:
+                            link = r.get("magnetUrl")
+                            # SÓ ACEITA MAGNET LINKS VERDADEIROS
+                            if link and link.startswith("magnet:?xt=urn:btih:"):
                                 all_magnets.append({
                                     "title": r.get("title"),
                                     "magnet": link,
                                     "size": r.get("size")
                                 })
                     elif resp.status_code == 400:
-                        # Se um indexador falhar com 400, apenas o ignoramos e continuamos
                         print(f"  -> Indexador {indexer_id} indisponível, ignorando.")
                 except Exception as e:
                     print(f"  -> Erro no indexador {indexer_id}: {e}")
@@ -80,11 +79,11 @@ class ProwlarrSource:
             if all_magnets:
                 results.append({
                     "tmdb_id": tmdb_id,
-                    "type": "movie",           # <--- CORRIGIDO AQUI
-                    "title_pt_br": title_pt,   # <--- CORRIGIDO AQUI
+                    "type": "movie",
+                    "title_pt_br": title_pt,
                     "releases": all_magnets
                 })
-                print(f"  -> Encontrados {len(all_magnets)} links no total!")
+                print(f"  -> Encontrados {len(all_magnets)} links válidos!")
             
             count += 1
             
