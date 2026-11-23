@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-22T23:16:44Z",
- "total_titles": 10,
+ "generated_at": "2026-11-23T05:43:31Z",
+ "total_titles": 14,
  "titles": {
   "45745": {
    "tmdb_id": 45745,
@@ -19,7 +19,7 @@
      "codec": "x264",
      "source": "WEB-DL",
      "dual_audio": false,
-     "score": 80.2,
+     "score": 80.4,
      "seeders": 265,
      "last_seen_seeders": 265
     }
@@ -52,7 +52,7 @@
      "codec": "x264",
      "source": "WEB-DL",
      "dual_audio": false,
-     "score": 83.8,
+     "score": 83.7,
      "seeders": 418,
      "last_seen_seeders": 418
     }
@@ -85,7 +85,7 @@
      "codec": "x264",
      "source": "WEB-DL",
      "dual_audio": false,
-     "score": 71.9,
+     "score": 72.2,
      "seeders": 85,
      "last_seen_seeders": 85
     }
@@ -374,9 +374,121 @@
      "score": 42.5
     }
    ]
+  },
+  "770156": {
+   "tmdb_id": 770156,
+   "type": "movie",
+   "title_pt_br": "Um Anjo em Nossas Vidas",
+   "releases": [
+    {
+     "title": "Lucy.Shimmers.And.The.Prince.Of.Peace.2020.WEB-DL.1080p [Brazilian] [Eng]",
+     "magnet": "magnet:?xt=urn:btih:1cd64b333e239fc649f1a370b40eb69441c9d5a3&dn=Lucy.Shimmers.And.The.Prince.Of.Peace.2020.WEB-DL.1080p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 2780991324,
+     "seeders": 1,
+     "added_at": "2026-11-23T05:43:31Z",
+     "last_seen_seeders": 1,
+     "quality": "1080p",
+     "codec": "Unknown",
+     "source": "WEB-DL",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 60.0
+    }
+   ]
+  },
+  "539": {
+   "tmdb_id": 539,
+   "type": "movie",
+   "title_pt_br": "Psicose",
+   "releases": [
+    {
+     "title": "Psycho.1960.BluRay.1080p [Brazilian] [Eng]",
+     "magnet": "magnet:?xt=urn:btih:80a7c5121b9f7f8003999a5e2809693b56c45d81&dn=Psycho.1960.BluRay.1080p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 1707249500,
+     "seeders": 2,
+     "added_at": "2026-11-23T05:43:31Z",
+     "last_seen_seeders": 2,
+     "quality": "1080p",
+     "codec": "Unknown",
+     "source": "BluRay",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 64.9
+    }
+   ]
+  },
+  "40096": {
+   "tmdb_id": 40096,
+   "type": "movie",
+   "title_pt_br": "O Auto da Compadecida",
+   "releases": [
+    {
+     "title": "Filme.O.Auto.Da.Compadecida.2000.WEB-DL [Brazilian]",
+     "magnet": "magnet:?xt=urn:btih:d64dea631759215465368633b0e4a1c91c845530&dn=Filme.O.Auto.Da.Compadecida.2000.WEB-DL%20%5BBrazilian%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 1256277934,
+     "seeders": 11,
+     "added_at": "2026-11-23T05:43:31Z",
+     "last_seen_seeders": 11,
+     "quality": "SD",
+     "codec": "Unknown",
+     "source": "WEB-DL",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 53.5
+    }
+   ]
+  },
+  "4935": {
+   "tmdb_id": 4935,
+   "type": "movie",
+   "title_pt_br": "O Castelo Animado",
+   "releases": [
+    {
+     "title": "O.Castelo.Animado.2004.WEB-DL.720p [Brazilian] [Eng]",
+     "magnet": "magnet:?xt=urn:btih:0ab88abbbff6d216765bd8131ed3d3cff18b1b25&dn=O.Castelo.Animado.2004.WEB-DL.720p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 1567663063,
+     "seeders": 1,
+     "added_at": "2026-11-23T05:43:31Z",
+     "last_seen_seeders": 1,
+     "quality": "720p",
+     "codec": "Unknown",
+     "source": "WEB-DL",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 52.5
+    },
+    {
+     "title": "Anime.O.Castelo.Animado.2004.720p [Brazilian] [Eng]",
+     "magnet": "magnet:?xt=urn:btih:52f9e2d88f5ade5681ad1fb012d3ec391310083e&dn=Anime.O.Castelo.Animado.2004.720p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 831520768,
+     "seeders": 5,
+     "added_at": "2026-11-23T05:43:31Z",
+     "last_seen_seeders": 5,
+     "quality": "720p",
+     "codec": "Unknown",
+     "source": "Unknown",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 50.5
+    },
+    {
+     "title": "Anime.O.Castelo.Animado.2004.WEB-DL [Brazilian]",
+     "magnet": "magnet:?xt=urn:btih:58fb42a036382d5cd94424e281f41a1daf1d06f0&dn=Anime.O.Castelo.Animado.2004.WEB-DL%20%5BBrazilian%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 2684354560,
+     "seeders": 1,
+     "added_at": "2026-11-23T05:43:31Z",
+     "last_seen_seeders": 1,
+     "quality": "SD",
+     "codec": "Unknown",
+     "source": "WEB-DL",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 40.5
+    }
+   ]
   }
  },
  "_state": {
-  "prowlarr_tmdb_page": 3
+  "prowlarr_tmdb_page": 4
  }
 }
