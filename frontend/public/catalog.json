@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-24T02:27:32Z",
- "total_titles": 20,
+ "generated_at": "2026-11-24T03:51:34Z",
+ "total_titles": 26,
  "titles": {
   "45745": {
    "tmdb_id": 45745,
@@ -19,9 +19,9 @@
      "codec": "x264",
      "source": "WEB-DL",
      "dual_audio": false,
-     "score": 80.5,
-     "seeders": 263,
-     "last_seen_seeders": 263
+     "score": 80.3,
+     "seeders": 249,
+     "last_seen_seeders": 249
     }
    ],
    "poster_path": "/l98Zns4oQe1BSvbF4hJ8oL6VSf0.jpg",
@@ -52,9 +52,9 @@
      "codec": "x264",
      "source": "WEB-DL",
      "dual_audio": false,
-     "score": 83.9,
-     "seeders": 438,
-     "last_seen_seeders": 438
+     "score": 84.0,
+     "seeders": 450,
+     "last_seen_seeders": 450
     }
    ],
    "poster_path": "/i9jJzvoXET4D9pOkoEwncSdNNER.jpg",
@@ -85,9 +85,9 @@
      "codec": "x264",
      "source": "WEB-DL",
      "dual_audio": false,
-     "score": 71.4,
-     "seeders": 79,
-     "last_seen_seeders": 79
+     "score": 71.7,
+     "seeders": 72,
+     "last_seen_seeders": 72
     }
    ],
    "poster_path": "/8qy3jRmaHR7f8VZh3iXCqCWfFsH.jpg",
@@ -109,9 +109,9 @@
      "title": "Batman.Knightfall.Part.1.Knightfall.2026.WEB-DL.1080P.x264 [Brazilian] [Eng]",
      "magnet": "magnet:?xt=urn:btih:950dccee4565e9762790e7d81534672cf62bd384&dn=Batman.Knightfall.Part.1.Knightfall.2026.WEB-DL.1080P.x264%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 1771674009,
-     "seeders": 120,
+     "seeders": 105,
      "added_at": "2026-11-22T15:25:55Z",
-     "last_seen_seeders": 120,
+     "last_seen_seeders": 105,
      "quality": "1080p",
      "codec": "x264",
      "source": "WEB-DL",
@@ -144,9 +144,9 @@
      "title": "Avatar.Aang.The.Last.Airbender.2026.WEB-DL.1080p.x264 [Brazilian] [Eng]",
      "magnet": "magnet:?xt=urn:btih:5edc496e7b39d52bfb036d4b9ec6995a09c27e94&dn=Avatar.Aang.The.Last.Airbender.2026.WEB-DL.1080p.x264%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 2770253905,
-     "seeders": 35,
+     "seeders": 30,
      "added_at": "2026-11-22T15:25:55Z",
-     "last_seen_seeders": 35,
+     "last_seen_seeders": 30,
      "quality": "1080p",
      "codec": "x264",
      "source": "WEB-DL",
@@ -165,9 +165,9 @@
      "title": "Swapped.2026.WEB-DL.1080p.x264 [Brazilian] [Eng]",
      "magnet": "magnet:?xt=urn:btih:23e2fec9340b8f3bd21fb7e33dc3932a97543b47&dn=Swapped.2026.WEB-DL.1080p.x264%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 2179695902,
-     "seeders": 120,
+     "seeders": 79,
      "added_at": "2026-11-22T15:25:55Z",
-     "last_seen_seeders": 120,
+     "last_seen_seeders": 79,
      "quality": "1080p",
      "codec": "x264",
      "source": "WEB-DL",
@@ -186,9 +186,9 @@
      "title": "Interstellar.2014.1080p [Eng]",
      "magnet": "magnet:?xt=urn:btih:89599bf4dc369a3a8eca26411c5ccf922d78b486&dn=Interstellar.2014.1080p%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 2426656522,
-     "seeders": 947,
+     "seeders": 934,
      "added_at": "2026-11-22T23:16:23Z",
-     "last_seen_seeders": 947,
+     "last_seen_seeders": 934,
      "quality": "1080p",
      "codec": "Unknown",
      "source": "Unknown",
@@ -214,9 +214,9 @@
      "title": "Interstellar.2015.1080p [Brazilian] [Eng]",
      "magnet": "magnet:?xt=urn:btih:ac3ee9395349ad9a0b6ef13e1520511a6b9ee2b2&dn=Interstellar.2015.1080p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 820469,
-     "seeders": 24,
+     "seeders": 18,
      "added_at": "2026-11-22T23:16:23Z",
-     "last_seen_seeders": 24,
+     "last_seen_seeders": 18,
      "quality": "1080p",
      "codec": "Unknown",
      "source": "Unknown",
@@ -242,9 +242,9 @@
      "title": "Interstellar.2014.720p [Eng]",
      "magnet": "magnet:?xt=urn:btih:6e88b3f25ba49d483d740a652bf013c341bc5373&dn=Interstellar.2014.720p%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 1095216660,
-     "seeders": 81,
+     "seeders": 76,
      "added_at": "2026-11-22T23:16:23Z",
-     "last_seen_seeders": 81,
+     "last_seen_seeders": 76,
      "quality": "720p",
      "codec": "Unknown",
      "source": "Unknown",
@@ -300,9 +300,9 @@
      "title": "Parasita.2019.1080p [Brazilian] [Eng]",
      "magnet": "magnet:?xt=urn:btih:1171e608f0d31b7f99a49c365a92eac478fdd217&dn=Parasita.2019.1080p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 3307124817,
-     "seeders": 14,
+     "seeders": 10,
      "added_at": "2026-11-22T23:16:23Z",
-     "last_seen_seeders": 14,
+     "last_seen_seeders": 10,
      "quality": "1080p",
      "codec": "Unknown",
      "source": "Unknown",
@@ -314,15 +314,16 @@
      "title": "Parasita.2019.720p [Brazilian]",
      "magnet": "magnet:?xt=urn:btih:ce027d6d488621af291968c9e29dc83e575e94bc&dn=Parasita.2019.720p%20%5BBrazilian%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 1610612736,
-     "seeders": 1,
+     "seeders": 0,
      "added_at": "2026-11-22T23:16:23Z",
-     "last_seen_seeders": 1,
+     "last_seen_seeders": 0,
      "quality": "720p",
      "codec": "Unknown",
      "source": "Unknown",
      "language": "pt-BR",
      "dual_audio": false,
-     "score": 42.5
+     "score": 42.5,
+     "zero_seeders_since": "2026-11-24T03:51:15Z"
     }
    ]
   },
@@ -349,9 +350,9 @@
      "title": "Pulp.Fiction.1994.WEB-DL.1080p [Brazilian] [Eng]",
      "magnet": "magnet:?xt=urn:btih:b87da5216a5da49da6b5de7095872bbd192104d8&dn=Pulp.Fiction.1994.WEB-DL.1080p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 2415919104,
-     "seeders": 6,
+     "seeders": 4,
      "added_at": "2026-11-22T23:16:23Z",
-     "last_seen_seeders": 6,
+     "last_seen_seeders": 4,
      "quality": "1080p",
      "codec": "Unknown",
      "source": "WEB-DL",
@@ -385,15 +386,16 @@
      "title": "Lucy.Shimmers.And.The.Prince.Of.Peace.2020.WEB-DL.1080p [Brazilian] [Eng]",
      "magnet": "magnet:?xt=urn:btih:1cd64b333e239fc649f1a370b40eb69441c9d5a3&dn=Lucy.Shimmers.And.The.Prince.Of.Peace.2020.WEB-DL.1080p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 2780991324,
-     "seeders": 1,
+     "seeders": 0,
      "added_at": "2026-11-23T05:43:31Z",
-     "last_seen_seeders": 1,
+     "last_seen_seeders": 0,
      "quality": "1080p",
      "codec": "Unknown",
      "source": "WEB-DL",
      "language": "pt-BR",
      "dual_audio": false,
-     "score": 60.0
+     "score": 60.0,
+     "zero_seeders_since": "2026-11-24T03:51:17Z"
     }
    ]
   },
@@ -406,9 +408,9 @@
      "title": "Psycho.1960.BluRay.1080p [Brazilian] [Eng]",
      "magnet": "magnet:?xt=urn:btih:80a7c5121b9f7f8003999a5e2809693b56c45d81&dn=Psycho.1960.BluRay.1080p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 1707249500,
-     "seeders": 3,
+     "seeders": 1,
      "added_at": "2026-11-23T05:43:31Z",
-     "last_seen_seeders": 3,
+     "last_seen_seeders": 1,
      "quality": "1080p",
      "codec": "Unknown",
      "source": "BluRay",
@@ -427,9 +429,9 @@
      "title": "Filme.O.Auto.Da.Compadecida.2000.WEB-DL [Brazilian]",
      "magnet": "magnet:?xt=urn:btih:d64dea631759215465368633b0e4a1c91c845530&dn=Filme.O.Auto.Da.Compadecida.2000.WEB-DL%20%5BBrazilian%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 1256277934,
-     "seeders": 13,
+     "seeders": 9,
      "added_at": "2026-11-23T05:43:31Z",
-     "last_seen_seeders": 13,
+     "last_seen_seeders": 9,
      "quality": "SD",
      "codec": "Unknown",
      "source": "WEB-DL",
@@ -513,15 +515,16 @@
      "title": "The.Silence.Of.The.Lambs.1991.1080p [Brazilian] [Eng]",
      "magnet": "magnet:?xt=urn:btih:11d760d5a01a6b2fec65ed4d9be25a0d1a5ec213&dn=The.Silence.Of.The.Lambs.1991.1080p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 1664299827,
-     "seeders": 1,
+     "seeders": 0,
      "added_at": "2026-11-23T17:23:06Z",
-     "last_seen_seeders": 1,
+     "last_seen_seeders": 0,
      "quality": "1080p",
      "codec": "Unknown",
      "source": "Unknown",
      "language": "pt-BR",
      "dual_audio": false,
-     "score": 50.0
+     "score": 50.0,
+     "zero_seeders_since": "2026-11-24T03:51:21Z"
     },
     {
      "title": "The.Silence.Of.The.Lambs.1991.Hd.WEB-DL [Brazilian] [Eng]",
@@ -563,9 +566,9 @@
      "title": "Radical.2023.WEB-DL.1080p [Brazilian] [Eng]",
      "magnet": "magnet:?xt=urn:btih:29137b356566ab79c347e5ed822cbe0f43b08629&dn=Radical.2023.WEB-DL.1080p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 3049426780,
-     "seeders": 8,
+     "seeders": 5,
      "added_at": "2026-11-23T17:23:06Z",
-     "last_seen_seeders": 8,
+     "last_seen_seeders": 5,
      "quality": "1080p",
      "codec": "Unknown",
      "source": "WEB-DL",
@@ -584,9 +587,9 @@
      "title": "Back.To.The.Future.1985.BluRay.1080p [Brazilian]",
      "magnet": "magnet:?xt=urn:btih:630631d23cb5abc5b02e922883ee4b55eb822e58&dn=Back.To.The.Future.1985.BluRay.1080p%20%5BBrazilian%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 1599875317,
-     "seeders": 6,
+     "seeders": 3,
      "added_at": "2026-11-23T17:23:06Z",
-     "last_seen_seeders": 6,
+     "last_seen_seeders": 3,
      "quality": "1080p",
      "codec": "Unknown",
      "source": "BluRay",
@@ -598,9 +601,9 @@
      "title": "Back.To.The.Future.1985.BDRip.720p [Brazilian]",
      "magnet": "magnet:?xt=urn:btih:f4e3ed0a4412143265759e8ee7010856a6ef7d1a&dn=Back.To.The.Future.1985.BDRip.720p%20%5BBrazilian%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 733625712,
-     "seeders": 4,
+     "seeders": 2,
      "added_at": "2026-11-23T17:23:06Z",
-     "last_seen_seeders": 4,
+     "last_seen_seeders": 2,
      "quality": "720p",
      "codec": "Unknown",
      "source": "BluRay",
@@ -612,23 +615,24 @@
      "title": "Back.To.The.Future.1985.1080p [Brazilian]",
      "magnet": "magnet:?xt=urn:btih:4e305c4576c9b854d46cc74966abac9fa8ef2f99&dn=Back.To.The.Future.1985.1080p%20%5BBrazilian%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 1717986918,
-     "seeders": 2,
+     "seeders": 0,
      "added_at": "2026-11-23T17:23:06Z",
-     "last_seen_seeders": 2,
+     "last_seen_seeders": 0,
      "quality": "1080p",
      "codec": "Unknown",
      "source": "Unknown",
      "language": "pt-BR",
      "dual_audio": false,
-     "score": 50.0
+     "score": 50.0,
+     "zero_seeders_since": "2026-11-24T03:51:24Z"
     },
     {
      "title": "Back.To.The.Future.1985.DVDRip",
      "magnet": "magnet:?xt=urn:btih:6a3c4c5dfa8d777ea98ae9b37b022cf04f483247&dn=Back.To.The.Future.1985.DVDRip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 5035849154,
-     "seeders": 10,
+     "seeders": 8,
      "added_at": "2026-11-23T17:23:06Z",
-     "last_seen_seeders": 10,
+     "last_seen_seeders": 8,
      "quality": "480p",
      "codec": "Unknown",
      "source": "Unknown",
@@ -669,9 +673,9 @@
      "title": "Remarkably.Bright.Creatures.2026.WEB-DL.1080p.x264 [Brazilian] [Eng]",
      "magnet": "magnet:?xt=urn:btih:77d8f9394592335b84a3aef7c7058b1629bc473f&dn=Remarkably.Bright.Creatures.2026.WEB-DL.1080p.x264%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 2448131358,
-     "seeders": 8,
+     "seeders": 7,
      "added_at": "2026-11-23T17:23:06Z",
-     "last_seen_seeders": 8,
+     "last_seen_seeders": 7,
      "quality": "1080p",
      "codec": "x264",
      "source": "WEB-DL",
@@ -705,9 +709,9 @@
      "title": "American.History.X.1998.1080p [Brazilian] [Eng]",
      "magnet": "magnet:?xt=urn:btih:611a36f0a9a21f33c1ddbdbf5c2296deb736cfb4&dn=American.History.X.1998.1080p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
      "size": 1911260446,
-     "seeders": 5,
+     "seeders": 3,
      "added_at": "2026-11-23T17:23:06Z",
-     "last_seen_seeders": 5,
+     "last_seen_seeders": 3,
      "quality": "1080p",
      "codec": "Unknown",
      "source": "Unknown",
@@ -746,9 +750,206 @@
      "zero_seeders_since": "2026-11-23T17:23:34Z"
     }
    ]
+  },
+  "614945": {
+   "tmdb_id": 614945,
+   "type": "movie",
+   "title_pt_br": "Mensagens para Isabelle",
+   "releases": [
+    {
+     "title": "Voicemails.For.Isabelle.2026.WEB-DL.1080p.x264 [Brazilian] [Eng]",
+     "magnet": "magnet:?xt=urn:btih:843b2793c5dbbdee12fd3c3cfee0b7f17c93f832&dn=Voicemails.For.Isabelle.2026.WEB-DL.1080p.x264%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 3017214525,
+     "seeders": 20,
+     "added_at": "2026-11-24T03:51:07Z",
+     "last_seen_seeders": 20,
+     "quality": "1080p",
+     "codec": "x264",
+     "source": "WEB-DL",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 77.0
+    }
+   ]
+  },
+  "77338": {
+   "tmdb_id": 77338,
+   "type": "movie",
+   "title_pt_br": "Intocáveis",
+   "releases": [
+    {
+     "title": "Intouchables.2011.BluRay.1080p.x264 [Brazilian] [Eng]",
+     "magnet": "magnet:?xt=urn:btih:943c0065cd04c37fd0b389c49d6ae6bccdb3620a&dn=Intouchables.2011.BluRay.1080p.x264%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 2136746229,
+     "seeders": 18,
+     "added_at": "2026-11-24T03:51:07Z",
+     "last_seen_seeders": 18,
+     "quality": "1080p",
+     "codec": "x264",
+     "source": "BluRay",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 78.3
+    },
+    {
+     "title": "Intouchables.Intocaveis.2011.bluray.720p [Brazilian]",
+     "magnet": "magnet:?xt=urn:btih:b3621be53104df642438e3fcd4c86205793a31c7&dn=Intouchables.Intocaveis.2011.bluray.720p%20%5BBrazilian%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 842006528,
+     "seeders": 2,
+     "added_at": "2026-11-24T03:51:07Z",
+     "last_seen_seeders": 2,
+     "quality": "720p",
+     "codec": "Unknown",
+     "source": "BluRay",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 54.5
+    }
+   ]
+  },
+  "599": {
+   "tmdb_id": 599,
+   "type": "movie",
+   "title_pt_br": "Crepúsculo dos Deuses",
+   "releases": [
+    {
+     "title": "Sunset.Boulevard.1950.1080p [Brazilian] [Eng]",
+     "magnet": "magnet:?xt=urn:btih:8e29adae87e863cb4a70df40c6497c80e3fe1801&dn=Sunset.Boulevard.1950.1080p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 1964947537,
+     "seeders": 0,
+     "added_at": "2026-11-24T03:51:07Z",
+     "last_seen_seeders": 0,
+     "quality": "1080p",
+     "codec": "Unknown",
+     "source": "Unknown",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 50.0,
+     "zero_seeders_since": "2026-11-24T03:51:30Z"
+    }
+   ]
+  },
+  "1356039": {
+   "tmdb_id": 1356039,
+   "type": "movie",
+   "title_pt_br": "Contra-Ataque",
+   "releases": [
+    {
+     "title": "Contraataque.2025.WEB-DL.1080p.x264 [Brazilian] [Eng]",
+     "magnet": "magnet:?xt=urn:btih:2981ca3adf764d3278748a3b40c1513fae1a7c72&dn=Contraataque.2025.WEB-DL.1080p.x264%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 2093796556,
+     "seeders": 1,
+     "added_at": "2026-11-24T03:51:07Z",
+     "last_seen_seeders": 1,
+     "quality": "1080p",
+     "codec": "x264",
+     "source": "WEB-DL",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 60.0
+    }
+   ]
+  },
+  "18491": {
+   "tmdb_id": 18491,
+   "type": "movie",
+   "title_pt_br": "Neon Genesis Evangelion: O Fim do Evangelho",
+   "releases": [
+    {
+     "title": "Shin.Seiki.Evangelion.Gekijo.Ban.Air.Magokoro.Wo.Kimi.Ni.1997.WEB-DL.1080p [Brazilian] [Eng]",
+     "magnet": "magnet:?xt=urn:btih:18d3744540eb3e526b8481bac5fa68222f519c8d&dn=Shin.Seiki.Evangelion.Gekijo.Ban.Air.Magokoro.Wo.Kimi.Ni.1997.WEB-DL.1080p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 1932735283,
+     "seeders": 4,
+     "added_at": "2026-11-24T03:51:07Z",
+     "last_seen_seeders": 4,
+     "quality": "1080p",
+     "codec": "Unknown",
+     "source": "WEB-DL",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 66.6
+    }
+   ]
+  },
+  "603": {
+   "tmdb_id": 603,
+   "type": "movie",
+   "title_pt_br": "Matrix",
+   "releases": [
+    {
+     "title": "The.Matrix.1999.BLURAY.4k [Brazilian] [Eng]",
+     "magnet": "magnet:?xt=urn:btih:96fdc513d5551feb50b955e542ad3a9acd37f361&dn=The.Matrix.1999.BLURAY.4k%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 32212254720,
+     "seeders": 8,
+     "added_at": "2026-11-24T03:51:07Z",
+     "last_seen_seeders": 8,
+     "quality": "4K",
+     "codec": "Unknown",
+     "source": "BluRay",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 78.9
+    },
+    {
+     "title": "Filme.Matrix.1999.BDRip.bluray.720p [Brazilian] [Eng]",
+     "magnet": "magnet:?xt=urn:btih:51ca3ba90f04bf50394e9eb7e448ceea214d5ad6&dn=Filme.Matrix.1999.BDRip.bluray.720p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 834666496,
+     "seeders": 11,
+     "added_at": "2026-11-24T03:51:07Z",
+     "last_seen_seeders": 11,
+     "quality": "720p",
+     "codec": "Unknown",
+     "source": "BluRay",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 67.5
+    },
+    {
+     "title": "Filme.Matrix.1999.Bluray.1080p [Brazilian] [Eng]",
+     "magnet": "magnet:?xt=urn:btih:8cc4fdc2c777d1464d9043397309f45859b9297b&dn=Filme.Matrix.1999.Bluray.1080p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 2179695902,
+     "seeders": 3,
+     "added_at": "2026-11-24T03:51:07Z",
+     "last_seen_seeders": 3,
+     "quality": "1080p",
+     "codec": "Unknown",
+     "source": "BluRay",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 67.0
+    },
+    {
+     "title": "The.Matrix.Open.Matte.1999.WEB-DL.1080p.AC3 [Brazilian] [Eng]",
+     "magnet": "magnet:?xt=urn:btih:76949e573ff48aa138f1e06541f3482bb49359c2&dn=The.Matrix.Open.Matte.1999.WEB-DL.1080p.AC3%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 2684354560,
+     "seeders": 4,
+     "added_at": "2026-11-24T03:51:07Z",
+     "last_seen_seeders": 4,
+     "quality": "1080p",
+     "codec": "Unknown",
+     "source": "WEB-DL",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 66.6
+    },
+    {
+     "title": "The.Matrix.1999.WEB-DL.720p [Brazilian] [Eng]",
+     "magnet": "magnet:?xt=urn:btih:26fa43a4ccca61d8f7cf96a106d7fe1801aed9c2&dn=The.Matrix.1999.WEB-DL.720p%20%5BBrazilian%5D%20%5BEng%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&tr=wss%3A%2F%2Ftracker.webtorrent.dev&tr=wss%3A%2F%2Ftracker.openwebtorrent.com",
+     "size": 2834678415,
+     "seeders": 1,
+     "added_at": "2026-11-24T03:51:07Z",
+     "last_seen_seeders": 1,
+     "quality": "720p",
+     "codec": "Unknown",
+     "source": "WEB-DL",
+     "language": "pt-BR",
+     "dual_audio": false,
+     "score": 52.5
+    }
+   ]
   }
  },
  "_state": {
-  "prowlarr_tmdb_page": 5
+  "prowlarr_tmdb_page": 6
  }
 }
